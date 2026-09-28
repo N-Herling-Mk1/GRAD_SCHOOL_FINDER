@@ -1,6 +1,9 @@
-# GRADFINDER mk1
+# GRADFINDER mk3
 
-Local Flask console for finding graduate programs by state. Stage C front end on a
+Live site: https://n-herling-mk1.github.io/GRAD_SCHOOL_FINDER/
+
+Console for finding graduate programs by state. Developed as a Flask app, published as a
+**static site** on GitHub Pages (see *Publish*). Stage C front end on a
 stage D skeleton: real app factory, blueprints, service layer, JSON API. The map,
 the tokens and the click-to-zoom behaviour carry over from `slp_finder_mk1`.
 
@@ -15,9 +18,32 @@ Four states have packs: AZ, CA, CO, NM. Everything else is an outline.
 or `.\run.ps1` on Windows, which does all three. `Unblock-File .\run.ps1` first if it
 came out of a zip.
 
+## Publish (static site, no backend)
+
+The Flask server only reads JSON files, so the whole site can be frozen:
+
+    python tools/export_static.py        # writes site/ (gitignored)
+    python -m http.server 8080 -d site   # preview exactly what Pages serves
+
+or `.\export.ps1`, which validates, exports and previews in one go.
+
+`export_static.py` runs the real app through Flask's test client, writes every API
+response to `site/api/*.json`, renders `index.html` / `method.html` with relative URLs,
+and sets `window.GF_STATIC = true` so `static/js/api.js` reads the JSON files instead
+of `/api/v1`. Family filtering moves to the browser in static mode (`filterFamily` in
+`api.js` mirrors `Store.detail` — keep the two in step).
+
+Deploy is automatic: `.github/workflows/pages.yml` validates, exports and publishes on
+every push to `main`. One-time setup: **Settings → Pages → Source: GitHub Actions**.
+
+Workflow: edit data or code → `python app.py` to develop → `.\export.ps1` to check the
+static build → commit and push → Pages updates in about a minute.
+
 ## Layout
 
     app.py                      dev entry point
+    export.ps1                  validate + export + local preview
+    .github/workflows/pages.yml build and deploy to Pages on push
     config.py                   paths, port, family taxonomy
     gradfinder/
       __init__.py               create_app factory + boot banner
@@ -37,6 +63,7 @@ came out of a zip.
       faculty/*.json            faculty lens (top-down, paper -> PI -> university)
       derived/projection.json   built artifact
     tools/
+      export_static.py          freeze the app into site/ for GitHub Pages
       build_geo.py              GeoJSON -> projected SVG paths
       check_data.py             pack validator
       seed_packs.py             one-shot seeder for the CA/CO/NM packs

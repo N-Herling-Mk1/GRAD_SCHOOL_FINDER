@@ -2,6 +2,6 @@ __pycache__/
 *.pyc
 .venv/
 .DS_Store
-
+site/
 _drops/
 *.zip

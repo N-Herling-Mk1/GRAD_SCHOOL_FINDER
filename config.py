@@ -7,7 +7,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 
 class Config:
     APP_NAME = "GRADFINDER"
-    BUILD = "mk2"
+    BUILD = "mk3"
     ROOT = ROOT
     DATA_DIR = os.path.join(ROOT, "data")
     INSTITUTIONS_DIR = os.path.join(ROOT, "data", "institutions")

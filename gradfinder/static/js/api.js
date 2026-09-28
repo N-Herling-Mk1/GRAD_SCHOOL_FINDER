@@ -32,27 +32,59 @@ GF.ui = (function () {
 })();
 
 GF.api = (function () {
-  var BASE = '/api/v1';
+  /* Two modes, one interface.
+     live   -- Flask dev server, /api/v1/...
+     static -- the exported site (GitHub Pages). Every response was written to
+               api/*.json by tools/export_static.py; family filtering, which the
+               server does in live mode, is done here instead. */
+  var STATIC = !!window.GF_STATIC;
+  var BASE = STATIC ? 'api' : '/api/v1';
 
   function get(path, label) {
     GF.ui.start(label);
-    return fetch(BASE + path, { headers: { 'Accept': 'application/json' } })
+    var url = STATIC ? (BASE + path + '.json') : (BASE + path);
+    return fetch(url, { headers: { 'Accept': 'application/json' } })
       .then(function (r) {
         GF.ui.progress(70);
         if (r.status === 404) return r.json().then(function (j) { j.__notfound = true; return j; });
         if (!r.ok) throw new Error('HTTP ' + r.status);
         return r.json();
       })
-      .then(function (j) { GF.ui.done(label + ' \u2014 ok'); return j; })
+      .then(function (j) {
+        if (STATIC && j.status === 'empty') j.__notfound = true;
+        GF.ui.done(label + ' \u2014 ok');
+        return j;
+      })
       .catch(function (e) { GF.ui.fail(label + ' failed: ' + e.message); throw e; });
   }
 
+  /* Mirror of Store.detail(family=...) in services/store.py. Keep the two in step. */
+  function filterFamily(doc, family) {
+    if (!family || doc.__notfound) return doc;
+    var out = Object.assign({}, doc);
+    out.institutions = (doc.institutions || []).map(function (inst) {
+      var rec = Object.assign({}, inst);
+      rec.programs = (inst.programs || []).filter(function (p) { return p.family === family; });
+      rec.program_count = rec.programs.length;
+      return rec;
+    }).filter(function (r) { return r.programs.length; });
+    out.institutions.sort(function (a, b) {
+      return (b.program_count - a.program_count) || (a.name < b.name ? -1 : a.name > b.name ? 1 : 0);
+    });
+    out.filter = { family: family, include_boundary: true };
+    return out;
+  }
+
   return {
+    mode: STATIC ? 'static' : 'live',
     geo: function () { return get('/geo', 'loading geometry'); },
     meta: function () { return get('/meta', 'loading schema'); },
     index: function () { return get('/states', 'loading state index'); },
     faculty: function (code) { return get('/faculty/' + code, 'loading faculty lens ' + code); },
     state: function (code, family) {
+      if (STATIC) {
+        return get('/states/' + code, 'loading ' + code).then(function (d) { return filterFamily(d, family); });
+      }
       var q = family ? ('?family=' + encodeURIComponent(family)) : '';
       return get('/states/' + code + q, 'loading ' + code);
     }
