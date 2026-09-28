@@ -1,0 +1,728 @@
+{
+  "schema": "gradfinder.state_pack/1",
+  "state": "CO",
+  "state_name": "Colorado",
+  "generated": "2026-09-08",
+  "stage": "L1-seed",
+  "provenance": {
+    "method": "hand-seeded from institution graduate-college listings",
+    "ipeds_joined": false,
+    "roster_complete": "believed complete for research-doctorate institutions; not machine-verified",
+    "program_lists_complete": false,
+    "note": "Counts are programs recorded in this pack, not programs offered. Lists are representative floors typed from graduate catalogues; no IPEDS join has run. Use the institution count, not the program count, to compare states."
+  },
+  "scope": {
+    "award": "research doctorate (PhD) and equivalent",
+    "stem_definition": "CIP families 01, 03, 11, 14, 26, 27, 40 plus research-track biomedical (51.14 research only). Professional practice doctorates (MD, DO, PharmD, DNP, DPT, OTD, DBA, EdD, PsyD) are excluded.",
+    "boundary_families": [
+      "psych_research",
+      "biomed_health"
+    ]
+  },
+  "institutions": [
+    {
+      "id": "co-cuboulder",
+      "name": "University of Colorado Boulder",
+      "short": "CU Boulder",
+      "city": "Boulder",
+      "lat": 40.0076,
+      "lon": -105.2659,
+      "control": "public",
+      "carnegie": "R1",
+      "ipeds_unitid": null,
+      "domain": "colorado.edu",
+      "website": "https://www.colorado.edu/graduateschool/",
+      "status": "in",
+      "confidence": "high",
+      "program_list_complete": false,
+      "notes": "JILA and the NIST partnership sit here; the AMO physics group is the strongest single reason to look at Boulder for condensed matter or quantum.",
+      "programs": [
+        {
+          "name": "Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Astrophysical and Planetary Sciences",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Biochemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Applied Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Aerospace Engineering Sciences",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Civil, Environmental and Architectural Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemical and Biological Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Materials Science and Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Molecular, Cellular and Developmental Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Ecology and Evolutionary Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Neuroscience",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Geological Sciences",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Atmospheric and Oceanic Sciences",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Environmental Studies",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Psychology and Neuroscience",
+          "family": "psych_research",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "co-csu",
+      "name": "Colorado State University",
+      "short": "CSU",
+      "city": "Fort Collins",
+      "lat": 40.5734,
+      "lon": -105.0865,
+      "control": "public",
+      "carnegie": "R1",
+      "ipeds_unitid": null,
+      "domain": "colostate.edu",
+      "website": "https://graduateschool.colostate.edu/",
+      "status": "in",
+      "confidence": "high",
+      "program_list_complete": false,
+      "notes": "",
+      "programs": [
+        {
+          "name": "Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Statistics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical and Computer Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Civil and Environmental Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemical and Biological Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Systems Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Biomedical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Cell and Molecular Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Ecology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Microbiology, Immunology and Pathology",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Biomedical Sciences",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Atmospheric Science",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Soil and Crop Sciences",
+          "family": "agri",
+          "award": "PhD"
+        },
+        {
+          "name": "Animal Sciences",
+          "family": "agri",
+          "award": "PhD"
+        },
+        {
+          "name": "Forest and Rangeland Stewardship",
+          "family": "agri",
+          "award": "PhD"
+        },
+        {
+          "name": "Fish, Wildlife and Conservation Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Psychology",
+          "family": "psych_research",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "co-mines",
+      "name": "Colorado School of Mines",
+      "short": "Mines",
+      "city": "Golden",
+      "lat": 39.751,
+      "lon": -105.222,
+      "control": "public",
+      "carnegie": "special focus, engineering",
+      "ipeds_unitid": null,
+      "domain": "mines.edu",
+      "website": "https://www.mines.edu/graduate-admissions/",
+      "status": "in",
+      "confidence": "high",
+      "program_list_complete": false,
+      "notes": "Narrow and deep: earth, energy and materials. Quantum engineering is a recent addition and worth a direct look given your condensed-matter target.",
+      "programs": [
+        {
+          "name": "Applied Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Applied Mathematics and Statistics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Civil and Environmental Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemical and Biological Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Metallurgical and Materials Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Materials Science",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mining Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Petroleum Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Nuclear Science and Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Quantum Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Geology and Geological Engineering",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Geophysics",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Hydrologic Science and Engineering",
+          "family": "geo_env",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "co-anschutz",
+      "name": "University of Colorado Anschutz Medical Campus",
+      "short": "CU Anschutz",
+      "city": "Aurora",
+      "lat": 39.7447,
+      "lon": -104.8386,
+      "control": "public",
+      "carnegie": "special focus, health",
+      "ipeds_unitid": null,
+      "domain": "cuanschutz.edu",
+      "website": "https://graduateschool.cuanschutz.edu/",
+      "status": "in",
+      "confidence": "medium",
+      "program_list_complete": false,
+      "notes": "",
+      "programs": [
+        {
+          "name": "Biomedical Sciences",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Cancer Biology",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Immunology",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Microbiology",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Neuroscience",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Pharmacology",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Structural Biology and Biochemistry",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Human Medical Genetics and Genomics",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Computational Bioscience",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Bioengineering",
+          "family": "engineering",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "co-cudenver",
+      "name": "University of Colorado Denver",
+      "short": "CU Denver",
+      "city": "Denver",
+      "lat": 39.7452,
+      "lon": -105.0021,
+      "control": "public",
+      "carnegie": "R2",
+      "ipeds_unitid": null,
+      "domain": "ucdenver.edu",
+      "website": "https://www.ucdenver.edu/graduate-school",
+      "status": "in",
+      "confidence": "medium",
+      "program_list_complete": false,
+      "notes": "",
+      "programs": [
+        {
+          "name": "Computer Science and Information Systems",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Applied Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Civil Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Bioengineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Integrative Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Health and Behavioral Sciences",
+          "family": "biomed_health",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "co-uccs",
+      "name": "University of Colorado Colorado Springs",
+      "short": "UCCS",
+      "city": "Colorado Springs",
+      "lat": 38.893,
+      "lon": -104.8003,
+      "control": "public",
+      "carnegie": "R2",
+      "ipeds_unitid": null,
+      "domain": "uccs.edu",
+      "website": "https://graduateschool.uccs.edu/",
+      "status": "in",
+      "confidence": "low",
+      "program_list_complete": false,
+      "notes": "Doctoral catalogue is small and several plans are expressed as one umbrella degree with concentrations. Counts here are soft.",
+      "programs": [
+        {
+          "name": "Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Applied Science",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Psychology",
+          "family": "psych_research",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "co-du",
+      "name": "University of Denver",
+      "short": "DU",
+      "city": "Denver",
+      "lat": 39.6766,
+      "lon": -104.9619,
+      "control": "private nonprofit",
+      "carnegie": "R1",
+      "ipeds_unitid": null,
+      "domain": "du.edu",
+      "website": "https://www.du.edu/academics/graduate",
+      "status": "in",
+      "confidence": "medium",
+      "program_list_complete": false,
+      "notes": "",
+      "programs": [
+        {
+          "name": "Physics and Astronomy",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry and Biochemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical and Computer Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Materials Science",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Biological Sciences",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Psychology",
+          "family": "psych_research",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "co-unco",
+      "name": "University of Northern Colorado",
+      "short": "UNC",
+      "city": "Greeley",
+      "lat": 40.4041,
+      "lon": -104.6975,
+      "control": "public",
+      "carnegie": "doctoral, professional",
+      "ipeds_unitid": null,
+      "domain": "unco.edu",
+      "website": "https://www.unco.edu/graduate-school/",
+      "status": "boundary",
+      "confidence": "low",
+      "program_list_complete": false,
+      "notes": "Doctorates here are discipline-education plans rather than research doctorates in the discipline. Boundary by the scope rule.",
+      "programs": [
+        {
+          "name": "Biological Education",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemical Education",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Educational Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "School Psychology",
+          "family": "psych_research",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "name": "Colorado State University Pueblo",
+      "city": "Pueblo",
+      "reason": "master's-level; no research doctorate"
+    },
+    {
+      "name": "Regis University",
+      "city": "Denver",
+      "reason": "professional doctorates (DNP, EdD, PsyD) only"
+    },
+    {
+      "name": "National Renewable Energy Laboratory",
+      "city": "Golden",
+      "reason": "not degree-granting; students enrol through CU, CSU or Mines"
+    },
+    {
+      "name": "United States Air Force Academy",
+      "city": "Colorado Springs",
+      "reason": "undergraduate only"
+    }
+  ],
+  "sources": [
+    {
+      "label": "CU Boulder Graduate School",
+      "url": "https://www.colorado.edu/graduateschool/",
+      "used_for": "CU Boulder roster",
+      "checked": "2026-09-08"
+    },
+    {
+      "label": "CSU Graduate School",
+      "url": "https://graduateschool.colostate.edu/",
+      "used_for": "CSU roster",
+      "checked": "2026-09-08"
+    },
+    {
+      "label": "Colorado School of Mines",
+      "url": "https://www.mines.edu/graduate-admissions/",
+      "used_for": "Mines roster",
+      "checked": "2026-09-08"
+    }
+  ],
+  "open_questions": [
+    "UCCS expresses several doctorates as one umbrella degree with concentrations; the count depends on which unit you pick.",
+    "CU Boulder and CU Anschutz are one university system but separate campuses; they are listed separately and must not be merged without deciding which is which.",
+    "UNC is tagged boundary: its doctorates are discipline-education plans."
+  ]
+}

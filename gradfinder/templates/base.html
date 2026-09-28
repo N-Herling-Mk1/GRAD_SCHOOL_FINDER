@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='img/favicon-32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/favicon-16.png') }}">
+<link rel="apple-touch-icon" href="{{ url_for('static', filename='img/apple-touch-icon.png') }}">
+<title>{% block title %}Gradfinder{% endblock %}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/tokens.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/map.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/panel.css') }}">
+</head>
+<body>
+<div class="shell">
+  <header class="head">
+    <h1>GRADFINDER</h1>
+    <span class="build">{{ build }}</span>
+    <span class="tagline">{% block tagline %}STEM research doctorates by state{% endblock %}</span>
+    <nav>
+      {% block nav %}
+      <span class="coverage" id="coverage">{{ coverage }} states loaded</span>
+      <a href="{{ url_for('views.method') }}">Method</a>
+      {% endblock %}
+    </nav>
+  </header>
+  {% block body %}{% endblock %}
+</div>
+{% block scripts %}{% endblock %}
+</body>
+</html>

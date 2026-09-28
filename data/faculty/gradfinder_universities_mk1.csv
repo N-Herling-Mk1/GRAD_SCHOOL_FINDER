@@ -1,0 +1,29 @@
+university,state,faculty_found,physics_dept_faculty,joint_appointment_faculty,best_fit_1to5,average_fit,top_3_faculty
+Northeastern,MA,1,1,0,5,5.0,Qimin Yan
+UT Austin,TX,1,0,0,5,5.0,Zhantao Chen
+U Florida,FL,3,2,0,5,3.7,Chunjing Jia; Richard Hennig; Peter Hirschfeld
+U Tennessee Knoxville,TN,7,5,0,5,3.6,Alan Tennant; Adrian Del Maestro; Yang Zhang
+Cornell,NY,2,1,0,5,3.5,Eun-Ah Kim; Carla Gomes
+MIT,MA,7,3,0,5,3.3,Mingda Li; Tess Smidt; Liang Fu
+University of Arizona,AZ,15,8,3,5,2.9,Dalziel Wilson; Brian LeRoy; John Schaibley
+Caltech,CA,1,1,0,4,4.0,Marco Bernardi
+Duke,NC,1,0,1,4,4.0,Olivier Delaire
+Emory,GA,1,0,1,4,4.0,Yao Wang
+Harvard,MA,1,0,0,4,4.0,Boris Kozinsky
+U Virginia,VA,1,1,0,4,4.0,Gia-Wei Chern
+UC Davis,CA,1,1,0,4,4.0,Richard Scalettar
+UC San Diego,CA,1,1,0,4,4.0,Yi-Zhuang You
+UIUC,IL,3,2,0,4,2.7,Bryan Clark; Lucas Wagner; Elif Ertekin
+Johns Hopkins,MD,1,0,0,3,3.0,Kamal Choudhary
+U Houston,TX,1,0,0,3,3.0,Mingjian Wen
+UC Irvine,CA,1,1,0,3,3.0,Kieron Burke
+UC Riverside,CA,1,0,0,3,3.0,Chen Li
+UCLA,CA,1,0,0,3,3.0,Di Luo
+UW-Madison,WI,1,0,0,3,3.0,Dane Morgan
+Portland State,OR,1,0,0,2,2.0,Yi Xia
+Purdue,IN,1,0,0,2,2.0,Xiulin Ruan
+U Michigan,MI,1,1,0,2,2.0,Emanuel Gull
+U Minnesota,MN,1,0,0,2,2.0,Ellad Tadmor
+U Oregon,OR,1,0,0,2,2.0,Matthias Agne
+U South Carolina,SC,1,0,0,2,2.0,Ming Hu
+Texas A&M,TX,1,0,0,1,1.0,Shuiwang Ji

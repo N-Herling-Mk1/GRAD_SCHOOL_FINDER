@@ -1,0 +1,686 @@
+{
+  "schema": "gradfinder.state_pack/1",
+  "state": "AZ",
+  "state_name": "Arizona",
+  "generated": "2026-09-08",
+  "stage": "L1-seed",
+  "provenance": {
+    "method": "hand-seeded from institution graduate-college listings",
+    "ipeds_joined": false,
+    "roster_complete": "believed complete for research-doctorate institutions; not machine-verified",
+    "program_lists_complete": false,
+    "note": "Counts are programs recorded in this pack, not programs offered. Lists are representative floors typed from graduate catalogues; no IPEDS join has run. Use the institution count, not the program count, to compare states.",
+    "admissions_note": "GPA fields carry a scope (institution or program), a basis (which GPA is calculated), and a type (floor, recommended, or reported typical). A bare number is not storable: UArizona's institution floor is 3.0 while its civil engineering PhD floor is 3.5 and its speech and hearing department reports a 3.7 typical admit that is explicitly not a cutoff."
+  },
+  "scope": {
+    "award": "research doctorate (PhD) and equivalent",
+    "stem_definition": "CIP families 01, 03, 11, 14, 26, 27, 40 plus research-track biomedical (51.14 research only). Professional practice doctorates (MD, DO, PharmD, DNP, DPT, OTD, DBA, EdD, PsyD) are excluded.",
+    "boundary_families": [
+      "psych_research",
+      "biomed_health"
+    ]
+  },
+  "institutions": [
+    {
+      "id": "az-arizona",
+      "name": "University of Arizona",
+      "short": "UArizona",
+      "city": "Tucson",
+      "lat": 32.2319,
+      "lon": -110.9501,
+      "control": "public",
+      "carnegie": "R1",
+      "ipeds_unitid": null,
+      "website": "https://grad.arizona.edu/programs",
+      "status": "in",
+      "confidence": "high",
+      "program_list_complete": false,
+      "notes": "Largest STEM doctoral catalogue in the state. Many programs run as Graduate Interdisciplinary Programs (GIDPs) rather than departments.",
+      "programs": [
+        {
+          "name": "Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Astronomy and Astrophysics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Planetary Sciences",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Optical Sciences",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Biochemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Applied Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Statistics and Data Science",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Information Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical and Computer Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Aerospace Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Civil Engineering and Engineering Mechanics",
+          "family": "engineering",
+          "award": "PhD",
+          "admissions": {
+            "gpa_min": {
+              "value": 3.5,
+              "scale": 4.0,
+              "basis": "graduate coursework during the MS",
+              "scope": "program",
+              "type": "floor",
+              "source_url": "https://www.caem.engineering.arizona.edu/grad-programs/admissions",
+              "as_of": "2026-09-08",
+              "verified": true,
+              "note": "Department floor for the PhD, above the Graduate College floor of 3.0."
+            }
+          }
+        },
+        {
+          "name": "Materials Science and Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Biomedical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Systems and Industrial Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Biosystems Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mining, Geological and Geophysical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Environmental Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Geosciences",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Hydrology and Atmospheric Sciences",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Environmental Science",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Natural Resources",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Molecular and Cellular Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Ecology and Evolutionary Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Entomology and Insect Science",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Plant Sciences",
+          "family": "agri",
+          "award": "PhD"
+        },
+        {
+          "name": "Genetics",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Neuroscience",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Physiological Sciences",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Cancer Biology",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Immunobiology",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Pharmacology and Toxicology",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Pharmaceutical Sciences",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Nutritional Sciences",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Animal and Comparative Biomedical Sciences",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Epidemiology",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Speech, Language, and Hearing Sciences",
+          "family": "biomed_health",
+          "award": "PhD",
+          "admissions": {
+            "gpa_min": {
+              "value": 3.7,
+              "scale": 4.0,
+              "basis": "last 60 units",
+              "scope": "program",
+              "type": "reported typical",
+              "source_url": "https://slhs.arizona.edu/frequently-asked-questions-application-process",
+              "as_of": "2026-09-08",
+              "verified": true,
+              "note": "The department states this describes recent admitted students and is explicitly NOT an admission criterion. Do not read it as a cutoff."
+            }
+          }
+        },
+        {
+          "name": "Psychology",
+          "family": "psych_research",
+          "award": "PhD"
+        }
+      ],
+      "domain": "arizona.edu",
+      "admissions": {
+        "gpa_min": {
+          "value": 3.0,
+          "scale": 4.0,
+          "basis": "cumulative from the highest degree, or the last 60 graded units",
+          "scope": "institution",
+          "type": "floor",
+          "source_url": "https://www.grad.arizona.edu/admissions/requirements/grade-point-average",
+          "as_of": "2026-09-08",
+          "verified": true,
+          "waiver": "If both the cumulative and last-60 calculations fall below 3.0, the department can file a justification waiver request. Six or more graded UA graduate units at 3.0+ also make an applicant admissible.",
+          "note": "The Graduate College calculates the admission GPA case by case from several possible bases, so a single number never fully describes the requirement."
+        },
+        "collected": "2026-09-08"
+      }
+    },
+    {
+      "id": "az-asu",
+      "name": "Arizona State University",
+      "short": "ASU",
+      "city": "Tempe",
+      "lat": 33.4242,
+      "lon": -111.9281,
+      "control": "public",
+      "carnegie": "R1",
+      "ipeds_unitid": null,
+      "website": "https://graduate.asu.edu/",
+      "status": "in",
+      "confidence": "high",
+      "program_list_complete": false,
+      "notes": "Multi-campus (Tempe, Polytechnic, West Valley, Downtown Phoenix). Marker is Tempe. Several PhDs are school-level with named concentrations rather than separate plans.",
+      "programs": [
+        {
+          "name": "Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Astrophysics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Biochemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Geological Sciences",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Exploration Systems Design",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Statistics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Applied Mathematics for the Life and Social Sciences",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Engineering",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Aerospace Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Civil, Environmental and Sustainable Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Materials Science and Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Biomedical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Industrial Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Systems Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Human Systems Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Biological Design",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Microbiology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Molecular and Cellular Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Evolutionary Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Environmental Life Sciences",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Neuroscience",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Plant Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Sustainability",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Geography",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Global Health",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Nursing and Healthcare Innovation",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Psychology",
+          "family": "psych_research",
+          "award": "PhD"
+        }
+      ],
+      "domain": "asu.edu",
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "az-nau",
+      "name": "Northern Arizona University",
+      "short": "NAU",
+      "city": "Flagstaff",
+      "lat": 35.1846,
+      "lon": -111.6543,
+      "control": "public",
+      "carnegie": "R2",
+      "ipeds_unitid": null,
+      "website": "https://nau.edu/graduate-college/doctoral-programs",
+      "status": "in",
+      "confidence": "high",
+      "program_list_complete": true,
+      "notes": "Doctoral roster taken from NAU's own graduate college listing, so this one is close to exhaustive. Civil and Environmental Engineering is listed as not accepting students.",
+      "programs": [
+        {
+          "name": "Applied Physics and Materials Science",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Astronomy and Planetary Science",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Earth Sciences and Environmental Sustainability",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Forest Science",
+          "family": "agri",
+          "award": "PhD"
+        },
+        {
+          "name": "Informatics and Computing",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Bioengineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Civil and Environmental Engineering",
+          "family": "engineering",
+          "award": "PhD",
+          "flag": "not accepting students"
+        },
+        {
+          "name": "Interdisciplinary Health",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Combined Counseling/School Psychology",
+          "family": "psych_research",
+          "award": "PhD"
+        }
+      ],
+      "domain": "nau.edu",
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "az-midwestern",
+      "name": "Midwestern University",
+      "short": "Midwestern",
+      "city": "Glendale",
+      "lat": 33.6669,
+      "lon": -112.2013,
+      "control": "private nonprofit",
+      "carnegie": "special focus, health professions",
+      "ipeds_unitid": null,
+      "website": "https://www.midwestern.edu/",
+      "status": "in",
+      "confidence": "medium",
+      "program_list_complete": false,
+      "notes": "Health-professions institution. The research doctorate here is Biomedical Sciences; everything else on this campus is a professional practice doctorate and falls outside scope.",
+      "programs": [
+        {
+          "name": "Biomedical Sciences",
+          "family": "biomed_health",
+          "award": "PhD"
+        }
+      ],
+      "domain": "midwestern.edu",
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "az-gcu",
+      "name": "Grand Canyon University",
+      "short": "GCU",
+      "city": "Phoenix",
+      "lat": 33.5107,
+      "lon": -112.131,
+      "control": "private",
+      "carnegie": "doctoral, professional",
+      "ipeds_unitid": null,
+      "website": "https://www.gcu.edu/",
+      "status": "boundary",
+      "confidence": "medium",
+      "program_list_complete": false,
+      "notes": "Doctoral catalogue is weighted toward education, business and counselling. The general psychology PhD is the only plan touching the STEM boundary, and it is a boundary case by the scope rule above.",
+      "programs": [
+        {
+          "name": "General Psychology",
+          "family": "psych_research",
+          "award": "PhD"
+        }
+      ],
+      "domain": "gcu.edu",
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "name": "University of Phoenix",
+      "city": "Phoenix",
+      "reason": "doctoral catalogue is professional practice only (DBA, DHA, EdD, DM); no research doctorate in a STEM family"
+    },
+    {
+      "name": "A.T. Still University",
+      "city": "Mesa",
+      "reason": "health professions doctorates (DO, DMD, DPT, OTD) plus an online health-sciences doctorate; no STEM research doctorate on the Arizona campus"
+    },
+    {
+      "name": "Embry-Riddle Aeronautical University",
+      "city": "Prescott",
+      "reason": "Prescott campus is undergraduate and master's; Embry-Riddle's doctoral programs sit at other campuses"
+    },
+    {
+      "name": "Prescott College",
+      "city": "Prescott",
+      "reason": "doctorate is Sustainability Education, an education plan rather than a STEM plan"
+    },
+    {
+      "name": "Phoenix Seminary",
+      "city": "Scottsdale",
+      "reason": "theological doctorates only"
+    },
+    {
+      "name": "Translational Genomics Research Institute (TGen)",
+      "city": "Phoenix",
+      "reason": "research institute, not degree-granting; students are enrolled through partner universities"
+    }
+  ],
+  "sources": [
+    {
+      "label": "NAU Graduate College doctoral programs",
+      "url": "https://nau.edu/graduate-college/doctoral-programs",
+      "used_for": "NAU roster",
+      "checked": "2026-09-08"
+    },
+    {
+      "label": "UArizona Graduate College program search",
+      "url": "https://grad.arizona.edu/programs",
+      "used_for": "UArizona roster",
+      "checked": "2026-09-08"
+    },
+    {
+      "label": "ASU Graduate College",
+      "url": "https://graduate.asu.edu/",
+      "used_for": "ASU roster",
+      "checked": "2026-09-08"
+    }
+  ],
+  "open_questions": [
+    "IPEDS UNITIDs are unfilled \u2014 the L0 institution join has not run yet.",
+    "UArizona and ASU program lists are representative, not exhaustive; ASU in particular hides plans behind school-level PhDs with named concentrations.",
+    "The psych_research family is in the pack but outside the strict STEM definition. Decide whether it counts before any cross-state comparison.",
+    "No funding, deadline, or advisor fields yet. Those belong to L3/L4, not here.",
+    "GPA is collected for UArizona only, and only where a page states it plainly. Every other institution reads 'not collected' rather than assuming the common 3.0."
+  ]
+}

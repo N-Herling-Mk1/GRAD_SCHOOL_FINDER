@@ -1,0 +1,347 @@
+{
+  "schema": "gradfinder.state_pack/1",
+  "state": "NM",
+  "state_name": "New Mexico",
+  "generated": "2026-09-08",
+  "stage": "L1-seed",
+  "provenance": {
+    "method": "hand-seeded from institution graduate-college listings",
+    "ipeds_joined": false,
+    "roster_complete": "believed complete for research-doctorate institutions; not machine-verified",
+    "program_lists_complete": false,
+    "note": "Counts are programs recorded in this pack, not programs offered. Lists are representative floors typed from graduate catalogues; no IPEDS join has run. Use the institution count, not the program count, to compare states."
+  },
+  "scope": {
+    "award": "research doctorate (PhD) and equivalent",
+    "stem_definition": "CIP families 01, 03, 11, 14, 26, 27, 40 plus research-track biomedical (51.14 research only). Professional practice doctorates (MD, DO, PharmD, DNP, DPT, OTD, DBA, EdD, PsyD) are excluded.",
+    "boundary_families": [
+      "psych_research",
+      "biomed_health"
+    ]
+  },
+  "institutions": [
+    {
+      "id": "nm-unm",
+      "name": "University of New Mexico",
+      "short": "UNM",
+      "city": "Albuquerque",
+      "lat": 35.0843,
+      "lon": -106.6198,
+      "control": "public",
+      "carnegie": "R1",
+      "ipeds_unitid": null,
+      "domain": "unm.edu",
+      "website": "https://grad.unm.edu/",
+      "status": "in",
+      "confidence": "medium",
+      "program_list_complete": false,
+      "notes": "Flagship. Optical Science and Engineering and the Nanoscience program run alongside Sandia and the Air Force Research Laboratory.",
+      "programs": [
+        {
+          "name": "Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Astronomy",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Statistics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical and Computer Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Civil Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Nanoscience and Microsystems Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Optical Science and Engineering",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Biomedical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Nuclear Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Biomedical Sciences",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Earth and Planetary Sciences",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Psychology",
+          "family": "psych_research",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "nm-nmsu",
+      "name": "New Mexico State University",
+      "short": "NMSU",
+      "city": "Las Cruces",
+      "lat": 32.2803,
+      "lon": -106.7489,
+      "control": "public",
+      "carnegie": "R2",
+      "ipeds_unitid": null,
+      "domain": "nmsu.edu",
+      "website": "https://gradschool.nmsu.edu/",
+      "status": "in",
+      "confidence": "medium",
+      "program_list_complete": false,
+      "notes": "",
+      "programs": [
+        {
+          "name": "Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Astronomy",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical and Computer Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical and Aerospace Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Civil Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Industrial Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Molecular Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Plant and Environmental Sciences",
+          "family": "agri",
+          "award": "PhD"
+        },
+        {
+          "name": "Animal and Range Sciences",
+          "family": "agri",
+          "award": "PhD"
+        },
+        {
+          "name": "Water Science and Management",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Psychology",
+          "family": "psych_research",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "nm-nmt",
+      "name": "New Mexico Institute of Mining and Technology",
+      "short": "NM Tech",
+      "city": "Socorro",
+      "lat": 34.0653,
+      "lon": -106.9067,
+      "control": "public",
+      "carnegie": "special focus, STEM",
+      "ipeds_unitid": null,
+      "domain": "nmt.edu",
+      "website": "https://www.nmt.edu/",
+      "status": "in",
+      "confidence": "low",
+      "program_list_complete": false,
+      "notes": "Small STEM-only institute. The explosives engineering doctorate is close to unique in the US. Program list is the least verified in this pack.",
+      "programs": [
+        {
+          "name": "Earth and Environmental Science",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Hydrology",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Materials Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Explosives Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "name": "New Mexico Highlands University",
+      "city": "Las Vegas",
+      "reason": "master's-level; no research doctorate"
+    },
+    {
+      "name": "Eastern New Mexico University",
+      "city": "Portales",
+      "reason": "master's-level; no research doctorate"
+    },
+    {
+      "name": "Los Alamos National Laboratory",
+      "city": "Los Alamos",
+      "reason": "not degree-granting; students enrol through partner universities"
+    },
+    {
+      "name": "Sandia National Laboratories",
+      "city": "Albuquerque",
+      "reason": "not degree-granting"
+    }
+  ],
+  "sources": [
+    {
+      "label": "UNM Graduate Studies",
+      "url": "https://grad.unm.edu/",
+      "used_for": "UNM roster",
+      "checked": "2026-09-08"
+    },
+    {
+      "label": "NMSU Graduate School",
+      "url": "https://gradschool.nmsu.edu/",
+      "used_for": "NMSU roster",
+      "checked": "2026-09-08"
+    },
+    {
+      "label": "New Mexico Tech",
+      "url": "https://www.nmt.edu/",
+      "used_for": "NM Tech roster",
+      "checked": "2026-09-08"
+    }
+  ],
+  "open_questions": [
+    "NM Tech's list is the least verified in the pack; treat its count as a rough floor.",
+    "The national labs drive much of the state's research but grant no degrees, so the map understates what is actually available there."
+  ]
+}

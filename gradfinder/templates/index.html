@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}Gradfinder — STEM doctorates by state{% endblock %}
+
+{% block body %}
+<div class="body">
+  <section class="stage">
+    <div class="filters" id="filters">
+      <span class="metric" id="metric">
+        <button class="chipf" data-metric="institutions" aria-pressed="true">Institutions</button><button
+                class="chipf" data-metric="programs" aria-pressed="false">Programs on file</button><button
+                class="chipf lens" data-metric="lens" aria-pressed="false">Faculty lens</button>
+      </span>
+      <span class="divider"></span>
+      <button class="chipf" data-family="" aria-pressed="true">All programs</button>
+      {% for f in families %}
+      <button class="chipf" data-family="{{ f.key }}" aria-pressed="false">{{ f.label }}</button>
+      {% endfor %}
+      <span class="spacer"></span>
+      <span class="note" id="filternote">Institution counts are comparable between states. Program counts are not.</span>
+    </div>
+
+    <div class="mapwrap" id="mapwrap">
+      <button class="zoomout" id="zoomout">&larr; Back to the full map (Esc)</button>
+      <svg id="map" viewBox="0 0 {{ canvas.width }} {{ canvas.height }}"
+           preserveAspectRatio="xMidYMid meet" role="img"
+           aria-label="United States map. Select a state to see its doctoral programs.">
+        <g id="layer-states"></g>
+        <g id="layer-labels"></g>
+        <g id="layer-markers"></g>
+        <g id="layer-box"></g>
+      </svg>
+      <div class="smallchips" id="smallchips"></div>
+      <div class="tip" id="tip"></div>
+      <div class="ctxmenu" id="ctxmenu" role="menu"></div>
+      <div class="legend" id="legend"></div>
+    </div>
+  </section>
+
+  <aside class="panel" id="panel" aria-live="polite">
+    <div class="empty">
+      <b>Pick a state</b>
+      Hover to read the totals, click to open the institutions. Four states have packs;
+      the rest are outlines waiting on one. The Faculty lens chip recolours the map by strong-fit faculty traced from papers ({{ lens_states }} states). Wheel zooms, drag pans, right click for options.
+    </div>
+  </aside>
+</div>
+
+<footer class="status">
+  <div class="bar"><i id="progress"></i></div>
+  <div class="log" id="log">idle</div>
+  <div class="clock" id="clock"></div>
+</footer>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/api.js') }}"></script>
+<script src="{{ url_for('static', filename='js/panel.js') }}"></script>
+<script src="{{ url_for('static', filename='js/map.js') }}"></script>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+{% endblock %}

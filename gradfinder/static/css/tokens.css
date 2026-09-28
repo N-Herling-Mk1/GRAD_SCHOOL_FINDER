@@ -1,0 +1,66 @@
+/* TRON Ares — standing visual identity. Values carried over from slp_finder_mk1
+   unchanged so the two consoles stay visually identical. Do not drift these. */
+:root {
+  --void: #05080c;
+  --panel: #0a1119;
+  --panel2: #0d1722;
+  --grid: #122132;
+  --line: #1b3348;
+  --cyan: #35e0ff;
+  --cyan-d: #0e6d85;
+  --amber: #ffb03a;
+  --orange: #ff6a1f;
+  --ink: #cfe8f5;
+  --dim: #5d7c92;
+  --dimmer: #37525f;
+  --ok: #4fd18b;
+  --bad: #ff4d5e;
+
+  --display: "Orbitron", "Share Tech Mono", ui-monospace, monospace;
+  --mono: "Share Tech Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --gap: 14px;
+  --radius: 2px;
+  --panel-w: 392px;
+  --rail: 46px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--void);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(1100px 700px at 28% 12%, rgba(53, 224, 255, .07), transparent 62%),
+    linear-gradient(transparent 95%, rgba(27, 51, 72, .55) 95%),
+    linear-gradient(90deg, transparent 95%, rgba(27, 51, 72, .55) 95%);
+  background-size: auto, 34px 34px, 34px 34px;
+}
+
+a { color: var(--cyan); text-decoration: none; border-bottom: 1px solid var(--cyan-d); }
+a:hover { color: #fff; border-bottom-color: var(--cyan); }
+
+:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+
+::-webkit-scrollbar { width: 9px; height: 9px; }
+::-webkit-scrollbar-track { background: var(--void); }
+::-webkit-scrollbar-thumb { background: var(--line); }
+::-webkit-scrollbar-thumb:hover { background: var(--cyan-d); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

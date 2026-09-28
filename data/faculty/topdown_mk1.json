@@ -1,0 +1,1552 @@
+{
+ "schema": "gradfinder.faculty_lens/1",
+ "name": "topdown_mk1",
+ "generated": "2026-09-27",
+ "seed": {
+  "title": "Direct Prediction of Phonon Density of States With Euclidean Neural Networks",
+  "authors": "Z. Chen, N. Andrejevic, T. Smidt, Z. Ding, Q. Xu, Y.-T. Chi, Q. T. Nguyen, A. Alatas, J. Kong, M. Li",
+  "venue": "Advanced Science 8, 2004214 (2021)",
+  "url": "https://doi.org/10.1002/advs.202004214",
+  "why": "Reproduced as the phonon DOS experiment in FORGE (INFO 698)."
+ },
+ "provenance": {
+  "method": "Top-down: papers first, then senior authors, then their current university. Three sweeps.",
+  "sweeps": {
+   "phonon-lineage": "Citation lineage of the seed paper",
+   "bayes-cmp": "Bayesian UQ + ML-for-CMP groups",
+   "ua": "UA department sweep"
+  },
+  "fit_scale": "1-5, hand-assigned. 5 = direct overlap with phonon ML or Bayesian UQ AND can advise a condensed-matter Physics PhD.",
+  "physics_dept": "yes = primary Physics/Applied Physics appointment; joint = joint appointment or listed in a physics grad program (confirm sole advising); no = other department.",
+  "not_comparable": "Arizona was swept department by department; every other state entered only through papers. Faculty counts are NOT comparable between states. Compare on best fit.",
+  "verification": "Affiliations checked against 2025-26 faculty pages by the sweep agents unless the note says otherwise. Recruiting status is only what a faculty page states."
+ },
+ "faculty": [
+  {
+   "name": "Mingda Li",
+   "university": "MIT",
+   "state": "MA",
+   "inst_id": null,
+   "department": "Nuclear Science & Eng",
+   "physics_dept": "no",
+   "fit": 5,
+   "sweep": "phonon-lineage",
+   "note": "Seed-paper PI. NSE, not Physics; confirm cross-dept advising",
+   "page": "https://nse.mit.edu/people/mingda-li/",
+   "papers": [
+    {
+     "title": "Direct Prediction of Phonon DOS with Euclidean Neural Networks (SEED)",
+     "year": 2021,
+     "venue": "Advanced Science",
+     "url": "https://doi.org/10.1002/advs.202004214",
+     "thread": "phonon-ML",
+     "note": "Seed"
+    },
+    {
+     "title": "Virtual node GNN for full phonon prediction",
+     "year": 2023,
+     "venue": "Nature Comput. Sci.",
+     "url": "https://arxiv.org/abs/2301.02197",
+     "thread": "phonon-ML",
+     "note": "DOS to full dispersion"
+    },
+    {
+     "title": "Foundation model for defect identification from vibrational spectra",
+     "year": 2025,
+     "venue": "Matter",
+     "url": "https://arxiv.org/abs/2506.00725",
+     "thread": "scattering-ML",
+     "note": null
+    },
+    {
+     "title": "AI-driven defect engineering for thermoelectrics",
+     "year": 2025,
+     "venue": "Adv. Materials",
+     "url": "https://arxiv.org/abs/2503.19148",
+     "thread": "thermal-transport",
+     "note": null
+    },
+    {
+     "title": "Universal ensemble-embedding GNN for optical spectra",
+     "year": 2024,
+     "venue": "Advanced Materials",
+     "url": "https://doi.org/10.1002/adma.202409175",
+     "thread": "equivariant-NN",
+     "note": null
+    },
+    {
+     "title": "Structural constraint integration in generative model for quantum materials",
+     "year": 2025,
+     "venue": "Nature Materials",
+     "url": "https://doi.org/10.1038/s41563-025-02355-y",
+     "thread": "other",
+     "note": null
+    },
+    {
+     "title": "Machine-learning spectral indicators of topology",
+     "year": 2022,
+     "venue": "Advanced Materials",
+     "url": "https://doi.org/10.1002/adma.202204113",
+     "thread": "scattering-ML",
+     "note": null
+    },
+    {
+     "title": "ML magnetism classifiers from atomic coordinates",
+     "year": 2022,
+     "venue": "iScience",
+     "url": "https://doi.org/10.1016/j.isci.2022.105192",
+     "thread": "equivariant-NN",
+     "note": "with Smidt"
+    },
+    {
+     "title": "Machine learning on neutron and x-ray scattering (review)",
+     "year": 2021,
+     "venue": "Chem. Phys. Rev.",
+     "url": "https://arxiv.org/abs/2102.03024",
+     "thread": "scattering-ML",
+     "note": null
+    },
+    {
+     "title": "Challenges and opportunities of ML on neutron and x-ray scattering",
+     "year": 2022,
+     "venue": "Synchrotron Rad. News",
+     "url": "https://doi.org/10.1080/08940886.2022.2112498",
+     "thread": "scattering-ML",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Tess Smidt",
+   "university": "MIT",
+   "state": "MA",
+   "inst_id": null,
+   "department": "EECS",
+   "physics_dept": "no",
+   "fit": 4,
+   "sweep": "phonon-lineage",
+   "note": "e3nn author",
+   "page": "https://www.eecs.mit.edu/people/tess-smidt/",
+   "papers": [
+    {
+     "title": "e3nn: Euclidean neural networks",
+     "year": 2022,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2207.09453",
+     "thread": "equivariant-NN",
+     "note": "Framework under the seed"
+    },
+    {
+     "title": "Phonon predictions with E(3)-equivariant GNNs (Phonax)",
+     "year": 2024,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2403.11347",
+     "thread": "phonon-ML",
+     "note": "Checkelsky co-PI"
+    }
+   ]
+  },
+  {
+   "name": "Marin Soljacic",
+   "university": "MIT",
+   "state": "MA",
+   "inst_id": null,
+   "department": "Physics",
+   "physics_dept": "yes",
+   "fit": 3,
+   "sweep": "phonon-lineage",
+   "note": "Photonic DOS ML; weaker CMP fit",
+   "page": "https://physics.mit.edu/faculty/marin-soljacic/",
+   "papers": [
+    {
+     "title": "Surrogate- and invariance-boosted contrastive learning",
+     "year": 2021,
+     "venue": "Nature Commun.",
+     "url": "https://arxiv.org/abs/2110.08406",
+     "thread": "other",
+     "note": "Cites seed"
+    },
+    {
+     "title": "Predicting band gap from chemical composition",
+     "year": 2025,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2501.02932",
+     "thread": "other",
+     "note": "Cites seed"
+    }
+   ]
+  },
+  {
+   "name": "Liang Fu",
+   "university": "MIT",
+   "state": "MA",
+   "inst_id": null,
+   "department": "Physics",
+   "physics_dept": "yes",
+   "fit": 4,
+   "sweep": "bayes-cmp",
+   "note": "Neural quantum states for moire/FQH",
+   "page": "https://physics.mit.edu/faculty/liang-fu/",
+   "papers": [
+    {
+     "title": "Fractional electron states in twisted MoTe2 with deep NN",
+     "year": 2025,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2503.13585",
+     "thread": "B-cmp-ml",
+     "note": "Di Luo first author"
+    },
+    {
+     "title": "Simulating moire quantum matter with neural network",
+     "year": 2024,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2406.17645",
+     "thread": "B-cmp-ml",
+     "note": null
+    },
+    {
+     "title": "Fractional quantum Hall wavefunctions with neural network",
+     "year": 2024,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2412.00618",
+     "thread": "B-cmp-ml",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Joseph Checkelsky",
+   "university": "MIT",
+   "state": "MA",
+   "inst_id": null,
+   "department": "Physics",
+   "physics_dept": "yes",
+   "fit": 3,
+   "sweep": "phonon-lineage",
+   "note": "Co-author lead (Phonax w/ Smidt); experimental quantum materials",
+   "page": "https://physics.mit.edu/faculty/joseph-checkelsky/",
+   "papers": []
+  },
+  {
+   "name": "Rafael Gomez-Bombarelli",
+   "university": "MIT",
+   "state": "MA",
+   "inst_id": null,
+   "department": "Materials Sci & Eng",
+   "physics_dept": "no",
+   "fit": 2,
+   "sweep": "phonon-lineage",
+   "note": "FLAG: possible leave to Lila Sciences",
+   "page": "https://mrl.mit.edu/PIs/Rafael-Gomez-Bombarelli",
+   "papers": [
+    {
+     "title": "Learning ordering in crystals with symmetry-aware GNNs",
+     "year": 2024,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2409.13851",
+     "thread": "equivariant-NN",
+     "note": "Cites seed"
+    }
+   ]
+  },
+  {
+   "name": "Jeffrey Grossman",
+   "university": "MIT",
+   "state": "MA",
+   "inst_id": null,
+   "department": "Materials Sci & Eng",
+   "physics_dept": "no",
+   "fit": 2,
+   "sweep": "phonon-lineage",
+   "note": null,
+   "page": "https://dmse.mit.edu/people/faculty/jeffrey-grossman/",
+   "papers": [
+    {
+     "title": "GNNs for crystal structures: capturing periodicity",
+     "year": 2023,
+     "venue": "Science Advances",
+     "url": "https://arxiv.org/abs/2208.05039",
+     "thread": "equivariant-NN",
+     "note": "Cites seed"
+    }
+   ]
+  },
+  {
+   "name": "Boris Kozinsky",
+   "university": "Harvard",
+   "state": "MA",
+   "inst_id": null,
+   "department": "SEAS / Chem",
+   "physics_dept": "no",
+   "fit": 4,
+   "sweep": "phonon-lineage",
+   "note": "Best Bayesian-UQ match (FLARE GP force fields, thermal transport)",
+   "page": "https://mir.g.harvard.edu/people/boris-kozinsky",
+   "papers": [
+    {
+     "title": "NequIP: E(3)-equivariant interatomic potentials",
+     "year": 2022,
+     "venue": "Nature Commun.",
+     "url": "https://arxiv.org/abs/2101.03164",
+     "thread": "equivariant-NN",
+     "note": null
+    },
+    {
+     "title": "Allegro: local equivariant representations",
+     "year": 2023,
+     "venue": "Nature Commun.",
+     "url": "https://arxiv.org/abs/2204.05249",
+     "thread": "equivariant-NN",
+     "note": null
+    },
+    {
+     "title": "Uncertainty-aware MD from Bayesian active learning (SiC)",
+     "year": 2023,
+     "venue": "npj Comput. Mater.",
+     "url": "https://doi.org/10.1038/s41524-023-00988-8",
+     "thread": "thermal-transport",
+     "note": "Bayesian UQ"
+    }
+   ]
+  },
+  {
+   "name": "Qimin Yan",
+   "university": "Northeastern",
+   "state": "MA",
+   "inst_id": null,
+   "department": "Physics",
+   "physics_dept": "yes",
+   "fit": 5,
+   "sweep": "phonon-lineage",
+   "note": "Equivariant spectra; cites seed",
+   "page": "https://cos.northeastern.edu/wp-content/uploads/2024/12/CV_Qimin_Yan.pdf",
+   "papers": [
+    {
+     "title": "Tensorial spectra with equivariant GNN (TSENN)",
+     "year": 2025,
+     "venue": "Nature Commun.",
+     "url": "https://arxiv.org/abs/2505.04862",
+     "thread": "equivariant-NN",
+     "note": "Cites seed"
+    },
+    {
+     "title": "ML for ensemble properties of disordered materials",
+     "year": 2025,
+     "venue": "ACS Nano",
+     "url": "https://arxiv.org/abs/2506.15652",
+     "thread": "equivariant-NN",
+     "note": "Cites seed"
+    }
+   ]
+  },
+  {
+   "name": "Eun-Ah Kim",
+   "university": "Cornell",
+   "state": "NY",
+   "inst_id": null,
+   "department": "Physics",
+   "physics_dept": "yes",
+   "fit": 5,
+   "sweep": "phonon-lineage",
+   "note": "Strongest CMP+ML fit (XTEC on scattering data)",
+   "page": "https://physics.cornell.edu/eun-ah-kim",
+   "papers": [
+    {
+     "title": "Interpretable unsupervised ML for x-ray diffraction (XTEC)",
+     "year": 2022,
+     "venue": "PNAS",
+     "url": "https://doi.org/10.1073/pnas.2109665119",
+     "thread": "scattering-ML",
+     "note": null
+    },
+    {
+     "title": "Bragg glass signatures in PdxErTe3 via XRD temperature clustering",
+     "year": 2024,
+     "venue": "Nature Physics",
+     "url": "https://doi.org/10.1038/s41567-023-02380-1",
+     "thread": "scattering-ML",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Carla Gomes",
+   "university": "Cornell",
+   "state": "NY",
+   "inst_id": null,
+   "department": "Computer Science",
+   "physics_dept": "no",
+   "fit": 2,
+   "sweep": "phonon-lineage",
+   "note": null,
+   "page": "https://www.cs.cornell.edu/people/carla-gomes",
+   "papers": [
+    {
+     "title": "Xtal2DoS: crystal-to-sequence DOS prediction",
+     "year": 2023,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2302.01486",
+     "thread": "phonon-ML",
+     "note": "Cites seed"
+    }
+   ]
+  },
+  {
+   "name": "Alan Tennant",
+   "university": "U Tennessee Knoxville",
+   "state": "TN",
+   "inst_id": null,
+   "department": "Physics & MSE",
+   "physics_dept": "yes",
+   "fit": 5,
+   "sweep": "phonon-lineage",
+   "note": "Inverse Hamiltonian from neutron data; ORNL adjacent",
+   "page": "https://quantummaterials.utk.edu/affiliates/affiliates-alan-tennant/",
+   "papers": [
+    {
+     "title": "ML + neutron scattering for Hamiltonian tuning of spin ice",
+     "year": 2022,
+     "venue": "Commun. Materials",
+     "url": "https://doi.org/10.1038/s43246-022-00306-7",
+     "thread": "scattering-ML",
+     "note": "Done at ORNL"
+    }
+   ]
+  },
+  {
+   "name": "Adrian Del Maestro",
+   "university": "U Tennessee Knoxville",
+   "state": "TN",
+   "inst_id": null,
+   "department": "Physics (Head)",
+   "physics_dept": "yes",
+   "fit": 4,
+   "sweep": "bayes-cmp",
+   "note": "GP ensembles for QMC/DMRG",
+   "page": "https://physics.utk.edu/people/instructional-faculty/del-maestro-adrian/",
+   "papers": [
+    {
+     "title": "Physically constrained ensemble GP for quantum systems w/ heteroskedastic noise",
+     "year": 2026,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2606.11240",
+     "thread": "A-bayesian",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Yang Zhang",
+   "university": "U Tennessee Knoxville",
+   "state": "TN",
+   "inst_id": null,
+   "department": "Physics (joint EECS)",
+   "physics_dept": "yes",
+   "fit": 4,
+   "sweep": "bayes-cmp",
+   "note": "RECRUITING per page",
+   "page": "https://physics.utk.edu/people/instructional-faculty/zhang-yang/",
+   "papers": [
+    {
+     "title": "Compact spin-charge separated neural quantum states",
+     "year": 2026,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2606.17045",
+     "thread": "B-cmp-ml",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Cristian Batista",
+   "university": "U Tennessee Knoxville",
+   "state": "TN",
+   "inst_id": null,
+   "department": "Physics",
+   "physics_dept": "yes",
+   "fit": 4,
+   "sweep": "bayes-cmp",
+   "note": "NN inverse neutron scattering",
+   "page": "https://physics.utk.edu/people/instructional-faculty/batista-cristian-d/",
+   "papers": [
+    {
+     "title": "Approaching the inverse neutron scattering problem with NNs",
+     "year": 2026,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2609.22535",
+     "thread": "B-cmp-ml",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Steve Johnston",
+   "university": "U Tennessee Knoxville",
+   "state": "TN",
+   "inst_id": null,
+   "department": "Physics",
+   "physics_dept": "yes",
+   "fit": 3,
+   "sweep": "bayes-cmp",
+   "note": "Co-author lead: RIXS Bayesian-opt Hamiltonian inference (BNL senior)",
+   "page": "https://physics.utk.edu/",
+   "papers": [
+    {
+     "title": "RIXS Hamiltonian inference with Bayesian optimization",
+     "year": 2025,
+     "venue": "Phys. Rev. B",
+     "url": "https://doi.org/10.1103/tnqm-ttj3",
+     "thread": "A-bayesian",
+     "note": "Senior author Mark Dean (BNL)"
+    }
+   ]
+  },
+  {
+   "name": "Sergei Kalinin",
+   "university": "U Tennessee Knoxville",
+   "state": "TN",
+   "inst_id": null,
+   "department": "Materials Sci & Eng",
+   "physics_dept": "no",
+   "fit": 3,
+   "sweep": "bayes-cmp",
+   "note": "Bayesian-opt autonomous microscopy",
+   "page": "https://tickle.utk.edu/mse/faculty/sergei-kalinin/",
+   "papers": [
+    {
+     "title": "Bayesian optimization co-optimizing noise and discovery",
+     "year": 2025,
+     "venue": "Digital Discovery",
+     "url": "https://doi.org/10.1039/d4dd00391h",
+     "thread": "A-bayesian",
+     "note": null
+    },
+    {
+     "title": "Human-guided multi-objective Bayesian optimization in SPM",
+     "year": 2026,
+     "venue": "Nano Letters",
+     "url": "https://doi.org/10.1021/acs.nanolett.5c05373",
+     "thread": "A-bayesian",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Arpan Biswas",
+   "university": "U Tennessee Knoxville",
+   "state": "TN",
+   "inst_id": null,
+   "department": "Bredesen Center (Res. Asst. Prof.)",
+   "physics_dept": "no",
+   "fit": 2,
+   "sweep": "bayes-cmp",
+   "note": "Affiliation partially verified",
+   "page": "https://bredesencenter.utk.edu/faculty/arpan-biswas/",
+   "papers": [
+    {
+     "title": "Autoencoder-assisted Bayesian optimization for defect structure refinement",
+     "year": 2026,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2601.00855",
+     "thread": "A-bayesian",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Chunjing Jia",
+   "university": "U Florida",
+   "state": "FL",
+   "inst_id": null,
+   "department": "Physics",
+   "physics_dept": "yes",
+   "fit": 5,
+   "sweep": "bayes-cmp",
+   "note": "GP active learning of phase diagrams + ARPES ML",
+   "page": "https://phys.ufl.edu/people/faculty/chunjing-jia/",
+   "papers": [
+    {
+     "title": "Active learning for phase diagrams with Gaussian processes",
+     "year": 2024,
+     "venue": "arXiv / NeurIPS ML4PS",
+     "url": "https://arxiv.org/abs/2409.07042",
+     "thread": "A-bayesian",
+     "note": null
+    },
+    {
+     "title": "ML reconstruction of electronic structure from ARPES",
+     "year": 2026,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2603.16725",
+     "thread": "B-cmp-ml",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Richard Hennig",
+   "university": "U Florida",
+   "state": "FL",
+   "inst_id": null,
+   "department": "Materials Sci & Eng",
+   "physics_dept": "no",
+   "fit": 3,
+   "sweep": "phonon-lineage",
+   "note": "Electron-phonon a2F ML; cites seed",
+   "page": "https://mse.ufl.edu/people/faculty/name/richard-hennig/",
+   "papers": [
+    {
+     "title": "Superconductor discovery via deep learning of electron-phonon spectral function",
+     "year": 2024,
+     "venue": "npj Comput. Mater.",
+     "url": "https://arxiv.org/abs/2401.16611",
+     "thread": "phonon-ML",
+     "note": "Hirschfeld co-author"
+    },
+    {
+     "title": "Guided diffusion for discovery of superconductors",
+     "year": 2025,
+     "venue": "npj Comput. Mater.",
+     "url": "https://arxiv.org/abs/2509.25186",
+     "thread": "other",
+     "note": "Cites seed"
+    }
+   ]
+  },
+  {
+   "name": "Peter Hirschfeld",
+   "university": "U Florida",
+   "state": "FL",
+   "inst_id": null,
+   "department": "Physics",
+   "physics_dept": "yes",
+   "fit": 3,
+   "sweep": "phonon-lineage",
+   "note": "Co-author lead on Hennig superconductor ML",
+   "page": "https://phys.ufl.edu/",
+   "papers": []
+  },
+  {
+   "name": "Bryan Clark",
+   "university": "UIUC",
+   "state": "IL",
+   "inst_id": null,
+   "department": "Physics",
+   "physics_dept": "yes",
+   "fit": 4,
+   "sweep": "bayes-cmp",
+   "note": "Neural quantum states",
+   "page": "https://physics.illinois.edu/people/directory/profile/bkclark",
+   "papers": [
+    {
+     "title": "Unifying view of fermionic neural network quantum states",
+     "year": 2024,
+     "venue": "Phys. Rev. B",
+     "url": "https://arxiv.org/abs/2311.09450",
+     "thread": "B-cmp-ml",
+     "note": null
+    },
+    {
+     "title": "Neural network backflow for ab-initio solids",
+     "year": 2026,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2603.14775",
+     "thread": "B-cmp-ml",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Lucas Wagner",
+   "university": "UIUC",
+   "state": "IL",
+   "inst_id": null,
+   "department": "Physics",
+   "physics_dept": "yes",
+   "fit": 3,
+   "sweep": "bayes-cmp",
+   "note": null,
+   "page": "https://physics.illinois.edu/people/directory/profile/lkwagner",
+   "papers": [
+    {
+     "title": "Expressivity of determinantal ansatzes for NN wave functions",
+     "year": 2025,
+     "venue": "JCTC",
+     "url": "https://arxiv.org/abs/2506.00155",
+     "thread": "B-cmp-ml",
+     "note": null
+    },
+    {
+     "title": "Renormalized density matrix downfolding",
+     "year": 2024,
+     "venue": "Phys. Rev. B",
+     "url": "https://doi.org/10.1103/PhysRevB.110.195103",
+     "thread": "B-cmp-ml",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Elif Ertekin",
+   "university": "UIUC",
+   "state": "IL",
+   "inst_id": null,
+   "department": "Mechanical Sci & Eng",
+   "physics_dept": "no",
+   "fit": 1,
+   "sweep": "phonon-lineage",
+   "note": "Weak fit",
+   "page": "https://mechse.illinois.edu/people/profile/ertekin",
+   "papers": [
+    {
+     "title": "Mixture-of-experts for data scarcity in materials",
+     "year": 2022,
+     "venue": "npj Comput. Mater.",
+     "url": "https://arxiv.org/abs/2207.13880",
+     "thread": "other",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Marco Bernardi",
+   "university": "Caltech",
+   "state": "CA",
+   "inst_id": "ca-caltech",
+   "department": "Applied Physics & Materials Sci",
+   "physics_dept": "yes",
+   "fit": 4,
+   "sweep": "phonon-lineage",
+   "note": "Electron-phonon, physics-heavy",
+   "page": "https://www.aphms.caltech.edu/people/bmarco",
+   "papers": [
+    {
+     "title": "Data-driven compression of electron-phonon interactions",
+     "year": 2024,
+     "venue": "Phys. Rev. X",
+     "url": "https://doi.org/10.1103/PhysRevX.14.021023",
+     "thread": "phonon-ML",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Chen Li",
+   "university": "UC Riverside",
+   "state": "CA",
+   "inst_id": "ca-ucr",
+   "department": "Mech Eng / MSE",
+   "physics_dept": "no",
+   "fit": 3,
+   "sweep": "phonon-lineage",
+   "note": "VAE inversion of neutron spectra",
+   "page": "https://chenwli.com/",
+   "papers": [
+    {
+     "title": "Obscured phonon dynamics from powder INS using ML",
+     "year": 2024,
+     "venue": "Mach. Learn.: Sci. Technol.",
+     "url": "https://doi.org/10.1088/2632-2153/ad79b6",
+     "thread": "scattering-ML",
+     "note": "VAE"
+    }
+   ]
+  },
+  {
+   "name": "Yi-Zhuang You",
+   "university": "UC San Diego",
+   "state": "CA",
+   "inst_id": "ca-ucsd",
+   "department": "Physics",
+   "physics_dept": "yes",
+   "fit": 4,
+   "sweep": "bayes-cmp",
+   "note": "Welcomes student inquiries",
+   "page": "https://everettyou.github.io/people/YZYou",
+   "papers": [
+    {
+     "title": "ShadowGPT: quantum many-body from randomized measurements",
+     "year": 2024,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2411.03285",
+     "thread": "B-cmp-ml",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Richard Scalettar",
+   "university": "UC Davis",
+   "state": "CA",
+   "inst_id": "ca-ucdavis",
+   "department": "Physics & Astronomy",
+   "physics_dept": "yes",
+   "fit": 4,
+   "sweep": "bayes-cmp",
+   "note": "ML on electron-phonon (Holstein) QMC",
+   "page": "https://physics.ucdavis.edu/directory/faculty/richard-scalettar",
+   "papers": [
+    {
+     "title": "Learning by confusion: phase diagram of the Holstein model",
+     "year": 2025,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2501.04681",
+     "thread": "B-cmp-ml",
+     "note": "Electron-phonon"
+    }
+   ]
+  },
+  {
+   "name": "Kieron Burke",
+   "university": "UC Irvine",
+   "state": "CA",
+   "inst_id": "ca-uci",
+   "department": "Chemistry; Physics & Astronomy",
+   "physics_dept": "yes",
+   "fit": 3,
+   "sweep": "bayes-cmp",
+   "note": "ML-DFT",
+   "page": "https://ps.uci.edu/fprofile/kieron-burke/",
+   "papers": [
+    {
+     "title": "Can machines learn density functionals? (review)",
+     "year": 2025,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2503.01709",
+     "thread": "B-cmp-ml",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Di Luo",
+   "university": "UCLA",
+   "state": "CA",
+   "inst_id": "ca-ucla",
+   "department": "Electrical & Computer Eng",
+   "physics_dept": "no",
+   "fit": 3,
+   "sweep": "bayes-cmp",
+   "note": "Co-author lead; welcomes physics/ML students",
+   "page": "https://diluo28.github.io/diluo.github.io/",
+   "papers": []
+  },
+  {
+   "name": "Olivier Delaire",
+   "university": "Duke",
+   "state": "NC",
+   "inst_id": null,
+   "department": "Mech Eng & Materials Sci (Physics DB)",
+   "physics_dept": "joint",
+   "fit": 4,
+   "sweep": "phonon-lineage",
+   "note": "Experimental phonons + ML INS inversion; confirm Physics advising",
+   "page": "https://fds.duke.edu/db/aas/Physics/researchers/olivier.delaire",
+   "papers": [
+    {
+     "title": "ML inversion of force constants from single-crystal INS",
+     "year": 2026,
+     "venue": "Digital Discovery",
+     "url": "https://doi.org/10.1039/d6dd00008h",
+     "thread": "scattering-ML",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Yao Wang",
+   "university": "Emory",
+   "state": "GA",
+   "inst_id": null,
+   "department": "Chemistry (Physics grad program)",
+   "physics_dept": "joint",
+   "fit": 4,
+   "sweep": "phonon-lineage",
+   "note": "Co-author lead on many Mingda Li papers",
+   "page": "https://www.emory.edu/",
+   "papers": []
+  },
+  {
+   "name": "Zhantao Chen",
+   "university": "UT Austin",
+   "state": "TX",
+   "inst_id": null,
+   "department": "Mechanical Eng",
+   "physics_dept": "no",
+   "fit": 5,
+   "sweep": "bayes-cmp",
+   "note": "SEED-PAPER FIRST AUTHOR, now faculty; Bayesian Hamiltonian inference from INS",
+   "page": "https://www.me.utexas.edu/people/faculty-directory/zchen",
+   "papers": [
+    {
+     "title": "Uncertainty-aware Hamiltonian inference and experimental design in quantum magnets",
+     "year": 2026,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2608.10350",
+     "thread": "A-bayesian",
+     "note": "Closest to FORGE Laplace/HMC"
+    }
+   ]
+  },
+  {
+   "name": "Mingjian Wen",
+   "university": "U Houston",
+   "state": "TX",
+   "inst_id": null,
+   "department": "Chemical & Biomolecular Eng",
+   "physics_dept": "no",
+   "fit": 3,
+   "sweep": "bayes-cmp",
+   "note": "UQ in atomistic ML; RECRUITING",
+   "page": "https://www.chee.uh.edu/faculty/wen-mingjian",
+   "papers": [
+    {
+     "title": "UQ and propagation in atomistic ML (review)",
+     "year": 2024,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2405.02461",
+     "thread": "A-bayesian",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Shuiwang Ji",
+   "university": "Texas A&M",
+   "state": "TX",
+   "inst_id": null,
+   "department": "CS & Eng",
+   "physics_dept": "no",
+   "fit": 1,
+   "sweep": "phonon-lineage",
+   "note": "Affiliation NOT verified",
+   "page": "https://engineering.tamu.edu/",
+   "papers": [
+    {
+     "title": "Periodic graph transformers for crystal property prediction",
+     "year": 2022,
+     "venue": "NeurIPS",
+     "url": "https://arxiv.org/abs/2209.11807",
+     "thread": "equivariant-NN",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Gia-Wei Chern",
+   "university": "U Virginia",
+   "state": "VA",
+   "inst_id": null,
+   "department": "Physics",
+   "physics_dept": "yes",
+   "fit": 4,
+   "sweep": "bayes-cmp",
+   "note": "ML force fields for spin systems",
+   "page": "https://www.phys.virginia.edu/People/personal.asp?UID=gc6u",
+   "papers": [
+    {
+     "title": "ML magnetization dynamics in metallic spin systems",
+     "year": 2026,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2604.11513",
+     "thread": "B-cmp-ml",
+     "note": null
+    },
+    {
+     "title": "ML force-field approach for itinerant electron magnets",
+     "year": 2025,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2501.06171",
+     "thread": "B-cmp-ml",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Emanuel Gull",
+   "university": "U Michigan",
+   "state": "MI",
+   "inst_id": null,
+   "department": "Physics",
+   "physics_dept": "yes",
+   "fit": 2,
+   "sweep": "bayes-cmp",
+   "note": "FLAG: lab relocating to Warsaw (ERC)",
+   "page": "https://lsa.umich.edu/physics/people/faculty/egull.html",
+   "papers": [
+    {
+     "title": "Compact representation of real-frequency spectral functions for ML",
+     "year": 2026,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2607.11190",
+     "thread": "B-cmp-ml",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Dane Morgan",
+   "university": "UW-Madison",
+   "state": "WI",
+   "inst_id": null,
+   "department": "Materials Sci & Eng",
+   "physics_dept": "no",
+   "fit": 3,
+   "sweep": "bayes-cmp",
+   "note": "Calibrated UQ + domain guidance",
+   "page": "https://engineering.wisc.edu/directory/profile/dane-morgan",
+   "papers": [
+    {
+     "title": "ML materials properties with uncertainty estimates and domain guidance",
+     "year": 2024,
+     "venue": "Mach. Learn.: Sci. Technol.",
+     "url": "https://arxiv.org/abs/2406.15650",
+     "thread": "A-bayesian",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Ellad Tadmor",
+   "university": "U Minnesota",
+   "state": "MN",
+   "inst_id": null,
+   "department": "Aerospace Eng & Mechanics",
+   "physics_dept": "no",
+   "fit": 2,
+   "sweep": "bayes-cmp",
+   "note": "Ensemble UQ for interatomic potentials",
+   "page": "https://cse.umn.edu/aem/ellad-b-tadmor",
+   "papers": [
+    {
+     "title": "Ensemble UQ methods for NN interatomic potentials",
+     "year": 2026,
+     "venue": "Mach. Learn.: Sci. Technol.",
+     "url": "https://arxiv.org/abs/2508.06456",
+     "thread": "A-bayesian",
+     "note": "Transtrum last author (left BYU)"
+    }
+   ]
+  },
+  {
+   "name": "Xiulin Ruan",
+   "university": "Purdue",
+   "state": "IN",
+   "inst_id": null,
+   "department": "Mechanical Eng",
+   "physics_dept": "no",
+   "fit": 2,
+   "sweep": "phonon-lineage",
+   "note": null,
+   "page": "https://engineering.purdue.edu/ME/People/ptProfile?resource_id=29343",
+   "papers": [
+    {
+     "title": "ML prediction of phonon scattering rates and thermal conductivity",
+     "year": 2023,
+     "venue": "npj Comput. Mater.",
+     "url": "https://doi.org/10.1038/s41524-023-01020-9",
+     "thread": "thermal-transport",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Kamal Choudhary",
+   "university": "Johns Hopkins",
+   "state": "MD",
+   "inst_id": null,
+   "department": "Materials Sci & Eng (joint ECE)",
+   "physics_dept": "no",
+   "fit": 3,
+   "sweep": "phonon-lineage",
+   "note": null,
+   "page": "https://engineering.jhu.edu/materials/faculty/kamal-choudhary/",
+   "papers": [
+    {
+     "title": "RamanGPT: crystal structures to Raman spectra",
+     "year": 2026,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2606.03764",
+     "thread": "phonon-ML",
+     "note": "Cites seed"
+    }
+   ]
+  },
+  {
+   "name": "Ming Hu",
+   "university": "U South Carolina",
+   "state": "SC",
+   "inst_id": null,
+   "department": "Mechanical Eng",
+   "physics_dept": "no",
+   "fit": 2,
+   "sweep": "phonon-lineage",
+   "note": "Direct phonon-DOS competitor",
+   "page": "https://sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/minghu.php",
+   "papers": [
+    {
+     "title": "Phonon DOS by crystal attention GNN",
+     "year": 2024,
+     "venue": "Mater. Today Phys.",
+     "url": "https://doi.org/10.1016/j.mtphys.2024.101632",
+     "thread": "phonon-ML",
+     "note": "Direct competitor"
+    }
+   ]
+  },
+  {
+   "name": "Yi Xia",
+   "university": "Portland State",
+   "state": "OR",
+   "inst_id": null,
+   "department": "Mechanical & Materials Eng",
+   "physics_dept": "no",
+   "fit": 2,
+   "sweep": "phonon-lineage",
+   "note": null,
+   "page": "https://www.pdx.edu/profile/yi-xia",
+   "papers": [
+    {
+     "title": "Universal harmonic interatomic potential for phonons",
+     "year": 2024,
+     "venue": "Appl. Phys. Lett.",
+     "url": "https://arxiv.org/abs/2402.11383",
+     "thread": "phonon-ML",
+     "note": "Cites seed"
+    },
+    {
+     "title": "High-throughput phonons via ML universal potentials",
+     "year": 2024,
+     "venue": "Mater. Today Phys.",
+     "url": "https://arxiv.org/abs/2407.09674",
+     "thread": "phonon-ML",
+     "note": "Cites seed"
+    }
+   ]
+  },
+  {
+   "name": "Matthias Agne",
+   "university": "U Oregon",
+   "state": "OR",
+   "inst_id": null,
+   "department": "Chemistry & Biochemistry",
+   "physics_dept": "no",
+   "fit": 2,
+   "sweep": "phonon-lineage",
+   "note": null,
+   "page": "https://chemistry.uoregon.edu/profile/agne/",
+   "papers": [
+    {
+     "title": "Heat capacity estimation of complex materials",
+     "year": 2025,
+     "venue": "Joule",
+     "url": "https://doi.org/10.1016/j.joule.2025.102054",
+     "thread": "thermal-transport",
+     "note": "Cites seed"
+    }
+   ]
+  },
+  {
+   "name": "Dalziel Wilson",
+   "university": "University of Arizona",
+   "state": "AZ",
+   "inst_id": "az-arizona",
+   "department": "Optical Sciences (joint Physics)",
+   "physics_dept": "joint",
+   "fit": 5,
+   "sweep": "ua",
+   "note": "Bayesian-opt phononic nanomechanics; confirm sole Physics advising",
+   "page": "https://profiles.arizona.edu/person/dalziel",
+   "papers": [
+    {
+     "title": "Ultrahigh-Q torsional nanomechanics through Bayesian optimization",
+     "year": 2026,
+     "venue": "Nano Letters",
+     "url": "https://doi.org/10.1021/acs.nanolett.5c06306",
+     "thread": "ML-methods",
+     "note": "Bayesian opt of phononic modes"
+    },
+    {
+     "title": "Imaging-based quantum optomechanics",
+     "year": 2025,
+     "venue": "Phys. Rev. Lett.",
+     "url": "https://doi.org/10.1103/64xv-3fyx",
+     "thread": "quantum",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Brian LeRoy",
+   "university": "University of Arizona",
+   "state": "AZ",
+   "inst_id": "az-arizona",
+   "department": "Physics",
+   "physics_dept": "yes",
+   "fit": 4,
+   "sweep": "ua",
+   "note": "2D/moire experiment; phonon lifetimes",
+   "page": "https://leroylab.arizona.edu/publications.html",
+   "papers": [
+    {
+     "title": "Phonon lifetimes in B-isotope graphene-hBN devices",
+     "year": 2022,
+     "venue": "Phys. Status Solidi RRL",
+     "url": "https://doi.org/10.1002/pssr.202200030",
+     "thread": "cmp-experiment",
+     "note": "Sandhu co-author"
+    }
+   ]
+  },
+  {
+   "name": "John Schaibley",
+   "university": "University of Arizona",
+   "state": "AZ",
+   "inst_id": "az-arizona",
+   "department": "Physics",
+   "physics_dept": "yes",
+   "fit": 4,
+   "sweep": "ua",
+   "note": "TMD semiconductors; fits SST emphasis",
+   "page": "https://physics.arizona.edu/people/john-schaibley",
+   "papers": [
+    {
+     "title": "Imaging interlayer exciton superfluidity in 2D heterostructure",
+     "year": 2025,
+     "venue": "Science Advances",
+     "url": "https://doi.org/10.1126/sciadv.adr1772",
+     "thread": "cmp-experiment",
+     "note": "with LeRoy"
+    },
+    {
+     "title": "Nanoscale trapping of interlayer excitons",
+     "year": 2021,
+     "venue": "Nano Letters",
+     "url": "https://doi.org/10.1021/acs.nanolett.1c01215",
+     "thread": "semiconductor",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Pierre Deymier",
+   "university": "University of Arizona",
+   "state": "AZ",
+   "inst_id": "az-arizona",
+   "department": "Materials Sci & Eng",
+   "physics_dept": "no",
+   "fit": 4,
+   "sweep": "ua",
+   "note": "UA's phonon group; needs Physics co-advisor",
+   "page": "https://mse.engineering.arizona.edu/faculty-staff",
+   "papers": [
+    {
+     "title": "A bright future for topological acoustics",
+     "year": 2025,
+     "venue": "Nature Commun.",
+     "url": "https://doi.org/10.1038/s41467-025-61380-2",
+     "thread": "phonon",
+     "note": null
+    },
+    {
+     "title": "Shor's algorithm with topological acoustic phase bits",
+     "year": 2026,
+     "venue": "Commun. Engineering",
+     "url": "https://doi.org/10.1038/s44172-026-00623-6",
+     "thread": "quantum",
+     "note": null
+    },
+    {
+     "title": "Composite superlattice RF surface-acoustic-wave devices",
+     "year": 2026,
+     "venue": "Phys. Rev. Applied",
+     "url": "https://doi.org/10.1103/p8q7-r6ck",
+     "thread": "semiconductor",
+     "note": "Mutlu co-author"
+    }
+   ]
+  },
+  {
+   "name": "Charles Stafford",
+   "university": "University of Arizona",
+   "state": "AZ",
+   "inst_id": "az-arizona",
+   "department": "Physics",
+   "physics_dept": "yes",
+   "fit": 3,
+   "sweep": "ua",
+   "note": "Quantum heat/thermoelectric transport theory",
+   "page": "https://stafford.physics.arizona.edu/publications.html",
+   "papers": [
+    {
+     "title": "Work sum rule for open quantum systems",
+     "year": 2024,
+     "venue": "Phys. Rev. Lett.",
+     "url": "https://doi.org/10.1103/PhysRevLett.133.070404",
+     "thread": "cmp-theory",
+     "note": null
+    },
+    {
+     "title": "Persistent vs dissipative Peltier effect in topological thermocouple",
+     "year": 2024,
+     "venue": "arXiv",
+     "url": "https://arxiv.org/abs/2410.06312",
+     "thread": "cmp-theory",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Zafer Mutlu",
+   "university": "University of Arizona",
+   "state": "AZ",
+   "inst_id": "az-arizona",
+   "department": "MSE / ECE / Physics",
+   "physics_dept": "joint",
+   "fit": 3,
+   "sweep": "ua",
+   "note": "GNR transistors",
+   "page": "https://zafermutlu.arizona.edu/publications",
+   "papers": [
+    {
+     "title": "Atomically precise graphene nanoribbon transistors",
+     "year": 2024,
+     "venue": "ACS Nano",
+     "url": "https://doi.org/10.1021/acsnano.4c04097",
+     "thread": "semiconductor",
+     "note": "with LeRoy"
+    },
+    {
+     "title": "9-AGNR transistors under gamma irradiation",
+     "year": 2026,
+     "venue": "ACS AMI",
+     "url": "https://doi.org/10.1021/acsami.6c02516",
+     "thread": "semiconductor",
+     "note": "HEP bridge"
+    }
+   ]
+  },
+  {
+   "name": "Brian S.Y. Kim",
+   "university": "University of Arizona",
+   "state": "AZ",
+   "inst_id": "az-arizona",
+   "department": "MSE / Physics",
+   "physics_dept": "joint",
+   "fit": 3,
+   "sweep": "ua",
+   "note": "vdW / 2D semiconductors",
+   "page": "https://profiles.arizona.edu/person/briankim",
+   "papers": [
+    {
+     "title": "Oxidized van der Waals TMDs (review)",
+     "year": 2024,
+     "venue": "Advanced Science",
+     "url": "https://doi.org/10.1002/advs.202407175",
+     "thread": "semiconductor",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Tai Kong",
+   "university": "University of Arizona",
+   "state": "AZ",
+   "inst_id": "az-arizona",
+   "department": "Physics",
+   "physics_dept": "yes",
+   "fit": 3,
+   "sweep": "ua",
+   "note": "Quantum-magnet crystal growth",
+   "page": "https://sites.google.com/view/kong-lab/publications",
+   "papers": [
+    {
+     "title": "Layered ferromagnet Cr1.21Te2",
+     "year": 2023,
+     "venue": "Phys. Rev. Materials",
+     "url": "https://doi.org/10.1103/PhysRevMaterials.7.044406",
+     "thread": "cmp-experiment",
+     "note": null
+    },
+    {
+     "title": "Shastry-Sutherland compound BaNd2ZnS5",
+     "year": 2022,
+     "venue": "Phys. Rev. Materials",
+     "url": "https://doi.org/10.1103/PhysRevMaterials.6.104403",
+     "thread": "quantum",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Jean-Luc Bredas",
+   "university": "University of Arizona",
+   "state": "AZ",
+   "inst_id": "az-arizona",
+   "department": "Chemistry & Biochemistry",
+   "physics_dept": "no",
+   "fit": 3,
+   "sweep": "ua",
+   "note": "GNN vibrational spectra; dept not confirmed on UA page",
+   "page": "https://bredators.arizona.edu/publications",
+   "papers": [
+    {
+     "title": "IR absorbance of hydrocarbons via message-passing NN",
+     "year": 2024,
+     "venue": "J. Phys. Chem. A",
+     "url": "https://doi.org/10.1021/acs.jpca.4c06745",
+     "thread": "phonon-ML",
+     "note": "Closest UA methods match"
+    }
+   ]
+  },
+  {
+   "name": "Sumit Mazumdar",
+   "university": "University of Arizona",
+   "state": "AZ",
+   "inst_id": "az-arizona",
+   "department": "Physics / Chem / OSC",
+   "physics_dept": "yes",
+   "fit": 2,
+   "sweep": "ua",
+   "note": null,
+   "page": "https://physics.arizona.edu/people/sumit-mazumdar",
+   "papers": [
+    {
+     "title": "Triplet-triplet multiexciton states in polypentacene",
+     "year": 2026,
+     "venue": "J. Chem. Phys.",
+     "url": "https://arxiv.org/abs/2607.03706",
+     "thread": "cmp-theory",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Mohammed Hassan",
+   "university": "University of Arizona",
+   "state": "AZ",
+   "inst_id": "az-arizona",
+   "department": "Physics (and OSC)",
+   "physics_dept": "yes",
+   "fit": 2,
+   "sweep": "ua",
+   "note": "Attosecond",
+   "page": "https://sites.arizona.edu/mohammedhassan/publications/",
+   "papers": [
+    {
+     "title": "Light-induced quantum tunnelling current in graphene",
+     "year": 2025,
+     "venue": "Nature Commun.",
+     "url": "https://doi.org/10.1038/s41467-025-59675-5",
+     "thread": "quantum",
+     "note": "with Golubev"
+    },
+    {
+     "title": "Attosecond electron microscopy and diffraction",
+     "year": 2024,
+     "venue": "Science Advances",
+     "url": "https://doi.org/10.1126/sciadv.adp5805",
+     "thread": "cmp-experiment",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Nikolay Golubev",
+   "university": "University of Arizona",
+   "state": "AZ",
+   "inst_id": "az-arizona",
+   "department": "Physics",
+   "physics_dept": "yes",
+   "fit": 2,
+   "sweep": "ua",
+   "note": null,
+   "page": "https://ngolubev.com/publications/",
+   "papers": [
+    {
+     "title": "Attosecond diffraction imaging of electron dynamics in solids",
+     "year": 2025,
+     "venue": "Phys. Rev. Research",
+     "url": "https://doi.org/10.1103/PhysRevResearch.7.L022042",
+     "thread": "cmp-theory",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Arvinder Sandhu",
+   "university": "University of Arizona",
+   "state": "AZ",
+   "inst_id": "az-arizona",
+   "department": "Physics",
+   "physics_dept": "yes",
+   "fit": 2,
+   "sweep": "ua",
+   "note": "Co-author on LeRoy phonon work",
+   "page": "https://physics.arizona.edu/",
+   "papers": [
+    {
+     "title": "Defects and phonons in bandgap dynamics of monolayer WS2",
+     "year": 2021,
+     "venue": "J. Phys.: Materials",
+     "url": "https://doi.org/10.1088/2515-7639/abc13b",
+     "thread": "semiconductor",
+     "note": "with Schaibley, LeRoy"
+    }
+   ]
+  },
+  {
+   "name": "Marat Latypov",
+   "university": "University of Arizona",
+   "state": "AZ",
+   "inst_id": "az-arizona",
+   "department": "MSE / Applied Math",
+   "physics_dept": "no",
+   "fit": 2,
+   "sweep": "ua",
+   "note": null,
+   "page": "https://mse.engineering.arizona.edu/faculty-staff",
+   "papers": [
+    {
+     "title": "Microstructure-property ML via vision transformers",
+     "year": 2025,
+     "venue": "Acta Materialia",
+     "url": "https://arxiv.org/abs/2501.18637",
+     "thread": "ML-methods",
+     "note": null
+    }
+   ]
+  },
+  {
+   "name": "Qing Hao",
+   "university": "University of Arizona",
+   "state": "AZ",
+   "inst_id": "az-arizona",
+   "department": "Aerospace & Mechanical Eng",
+   "physics_dept": "no",
+   "fit": 2,
+   "sweep": "ua",
+   "note": "Phonon thermal transport measurement",
+   "page": "https://profiles.arizona.edu/person/qinghao",
+   "papers": [
+    {
+     "title": "In-plane thermal conductivity of strained Si thin films",
+     "year": 2023,
+     "venue": "J. Appl. Phys.",
+     "url": "https://doi.org/10.1063/5.0125422",
+     "thread": "semiconductor",
+     "note": null
+    },
+    {
+     "title": "Heat conductance of graphene-sericin hybrid",
+     "year": 2022,
+     "venue": "Adv. Funct. Mater.",
+     "url": "https://doi.org/10.1002/adfm.202111121",
+     "thread": "other",
+     "note": null
+    }
+   ]
+  }
+ ]
+}

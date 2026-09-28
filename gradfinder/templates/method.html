@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}Gradfinder — method{% endblock %}
+{% block tagline %}what this console counts, and what it does not{% endblock %}
+{% block nav %}<a href="{{ url_for('views.index') }}">Back to the map</a>{% endblock %}
+
+{% block body %}
+<div class="body" style="grid-template-columns:1fr">
+  <section class="panel" style="max-width:820px;margin:0 auto;padding:26px 30px 60px">
+    <h2>What the numbers mean</h2>
+    <p class="sub">Read this before comparing two states.</p>
+
+    <div class="sect">
+      <h3>Which metric to trust</h3>
+      <p>The map draws one of two numbers. <b>Institutions</b> counts institutions in
+      scope and is comparable between states: enumerating the doctoral institutions in a
+      state is a bounded job and these rosters are believed complete. <b>Programs on
+      file</b> is not comparable between states — it measures how deeply each pack was
+      typed. Compare states on institutions; use programs to look inside one state.</p>
+    </div>
+
+    <div class="sect">
+      <h3>Faculty lens</h3>
+      <p>A separate layer built top-down: papers traced from the FORGE phonon seed
+      (Chen et al., Adv. Sci. 2021) to their senior authors, then to those authors' current
+      universities. Map colour is the count of faculty with fit 4 or 5; fit is a hand judgment.
+      Arizona was swept department by department and every other state only through papers,
+      so these counts are <b>not</b> comparable between states &mdash; compare on best fit.
+      Details in <code>docs/TOPDOWN.md</code>.</p>
+    </div>
+
+    <div class="sect">
+      <h3>Counting rule</h3>
+      <p>A number in this console is a count of <em>programs recorded in the state's data pack</em>.
+      It is not a count of programs offered. Until a state's pack has been rebuilt from IPEDS
+      Completions, the two differ, and the gap is not uniform between institutions.</p>
+    </div>
+
+    <div class="sect">
+      <h3>Scope</h3>
+      <p>Research doctorates only. Professional practice doctorates — MD, DO, PharmD, DNP, DPT,
+      OTD, DBA, EdD, PsyD — are out of scope even where the field is technical.</p>
+      <ul class="qlist">
+        {% for f in families %}<li>{{ f.label }} &mdash; CIP {{ f.cip }}</li>{% endfor %}
+      </ul>
+      <p>The last two families are boundary cases. Psychology sits inside NSF's STEM definition and
+      outside several others; biomedical and health research splits on whether the plan is a research
+      doctorate or a clinical one. Both are tagged so they can be included or dropped, rather than
+      silently folded in.</p>
+    </div>
+
+    <div class="sect">
+      <h3>Layers</h3>
+      <p>The pipeline runs L0 roster &rarr; L1 eligible &rarr; L2 sourced &rarr; L3 resolved &rarr; L4 dossier.
+      Every pack declares which layer it has reached. Arizona is at <b>L1-seed</b>: institutions
+      enumerated by hand, programs representative, no IPEDS join, no funding or deadline fields.</p>
+    </div>
+
+    <div class="sect">
+      <h3>Known weaknesses</h3>
+      <ul class="qlist">
+        <li>Program lists for the two large public universities are representative, not exhaustive, so their totals are floors.</li>
+        <li>ASU expresses many plans as school-level doctorates with named concentrations; a concentration list and a plan list give different counts.</li>
+        <li>Multi-campus institutions get one marker, at the flagship campus.</li>
+        <li>Program counts across states compare collection effort, not program supply. The California lists are shallower relative to institution size than the Arizona ones.</li>
+        <li>Program links run a site search on the institution's domain. The packs carry no verified program URLs, and constructing plausible ones would produce authoritative-looking 404s.</li>
+        <li>Nothing here is scraped or machine-verified. Every record was typed by hand.</li>
+      </ul>
+    </div>
+  </section>
+</div>
+{% endblock %}

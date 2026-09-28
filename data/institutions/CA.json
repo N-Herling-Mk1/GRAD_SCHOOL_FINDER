@@ -1,0 +1,1731 @@
+{
+  "schema": "gradfinder.state_pack/1",
+  "state": "CA",
+  "state_name": "California",
+  "generated": "2026-09-08",
+  "stage": "L1-seed",
+  "provenance": {
+    "method": "hand-seeded from institution graduate-college listings",
+    "ipeds_joined": false,
+    "roster_complete": "believed complete for research-doctorate institutions; not machine-verified",
+    "program_lists_complete": false,
+    "note": "Counts are programs recorded in this pack, not programs offered. Lists are representative floors typed from graduate catalogues; no IPEDS join has run. Use the institution count, not the program count, to compare states."
+  },
+  "scope": {
+    "award": "research doctorate (PhD) and equivalent",
+    "stem_definition": "CIP families 01, 03, 11, 14, 26, 27, 40 plus research-track biomedical (51.14 research only). Professional practice doctorates (MD, DO, PharmD, DNP, DPT, OTD, DBA, EdD, PsyD) are excluded.",
+    "boundary_families": [
+      "psych_research",
+      "biomed_health"
+    ]
+  },
+  "institutions": [
+    {
+      "id": "ca-berkeley",
+      "name": "University of California, Berkeley",
+      "short": "UC Berkeley",
+      "city": "Berkeley",
+      "lat": 37.8719,
+      "lon": -122.2585,
+      "control": "public",
+      "carnegie": "R1",
+      "ipeds_unitid": null,
+      "domain": "berkeley.edu",
+      "website": "https://grad.berkeley.edu/programs/",
+      "status": "in",
+      "confidence": "high",
+      "program_list_complete": false,
+      "notes": "",
+      "programs": [
+        {
+          "name": "Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Astrophysics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Statistics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical Engineering and Computer Sciences",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Civil and Environmental Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Materials Science and Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Nuclear Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Bioengineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Molecular and Cell Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Integrative Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Earth and Planetary Science",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Environmental Science, Policy and Management",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Plant Biology",
+          "family": "agri",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "ca-ucla",
+      "name": "University of California, Los Angeles",
+      "short": "UCLA",
+      "city": "Los Angeles",
+      "lat": 34.0689,
+      "lon": -118.4452,
+      "control": "public",
+      "carnegie": "R1",
+      "ipeds_unitid": null,
+      "domain": "ucla.edu",
+      "website": "https://grad.ucla.edu/programs/",
+      "status": "in",
+      "confidence": "high",
+      "program_list_complete": false,
+      "notes": "",
+      "programs": [
+        {
+          "name": "Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Astronomy and Astrophysics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Statistics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical and Computer Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical and Aerospace Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Civil and Environmental Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemical and Biomolecular Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Materials Science and Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Bioengineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Molecular Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Neuroscience",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Earth, Planetary and Space Sciences",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Atmospheric and Oceanic Sciences",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Biomedical Sciences",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Psychology",
+          "family": "psych_research",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "ca-ucsd",
+      "name": "University of California, San Diego",
+      "short": "UC San Diego",
+      "city": "La Jolla",
+      "lat": 32.8801,
+      "lon": -117.234,
+      "control": "public",
+      "carnegie": "R1",
+      "ipeds_unitid": null,
+      "domain": "ucsd.edu",
+      "website": "https://grad.ucsd.edu/admissions/programs/",
+      "status": "in",
+      "confidence": "high",
+      "program_list_complete": false,
+      "notes": "Scripps Institution of Oceanography is part of UCSD; its doctorates are counted here.",
+      "programs": [
+        {
+          "name": "Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry and Biochemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science and Engineering",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Data Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical and Computer Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical and Aerospace Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Structural Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "NanoEngineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Bioengineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Materials Science and Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Biological Sciences",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Neurosciences",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Oceanography",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Earth Sciences",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Biomedical Sciences",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Cognitive Science",
+          "family": "psych_research",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "ca-ucdavis",
+      "name": "University of California, Davis",
+      "short": "UC Davis",
+      "city": "Davis",
+      "lat": 38.5382,
+      "lon": -121.7617,
+      "control": "public",
+      "carnegie": "R1",
+      "ipeds_unitid": null,
+      "domain": "ucdavis.edu",
+      "website": "https://grad.ucdavis.edu/programs",
+      "status": "in",
+      "confidence": "high",
+      "program_list_complete": false,
+      "notes": "",
+      "programs": [
+        {
+          "name": "Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Statistics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical and Computer Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical and Aerospace Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Civil and Environmental Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Materials Science and Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Biomedical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Biological Systems Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Plant Biology",
+          "family": "agri",
+          "award": "PhD"
+        },
+        {
+          "name": "Horticulture and Agronomy",
+          "family": "agri",
+          "award": "PhD"
+        },
+        {
+          "name": "Animal Biology",
+          "family": "agri",
+          "award": "PhD"
+        },
+        {
+          "name": "Soils and Biogeochemistry",
+          "family": "agri",
+          "award": "PhD"
+        },
+        {
+          "name": "Ecology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Microbiology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Geology",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Atmospheric Science",
+          "family": "geo_env",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "ca-uci",
+      "name": "University of California, Irvine",
+      "short": "UC Irvine",
+      "city": "Irvine",
+      "lat": 33.6405,
+      "lon": -117.8443,
+      "control": "public",
+      "carnegie": "R1",
+      "ipeds_unitid": null,
+      "domain": "uci.edu",
+      "website": "https://grad.uci.edu/programs/",
+      "status": "in",
+      "confidence": "medium",
+      "program_list_complete": false,
+      "notes": "",
+      "programs": [
+        {
+          "name": "Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Statistics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical Engineering and Computer Science",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical and Aerospace Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Civil and Environmental Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemical and Biomolecular Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Materials Science and Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Biomedical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Biological Sciences",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Neurobiology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Earth System Science",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Psychological Science",
+          "family": "psych_research",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "ca-ucsb",
+      "name": "University of California, Santa Barbara",
+      "short": "UC Santa Barbara",
+      "city": "Santa Barbara",
+      "lat": 34.414,
+      "lon": -119.8489,
+      "control": "public",
+      "carnegie": "R1",
+      "ipeds_unitid": null,
+      "domain": "ucsb.edu",
+      "website": "https://www.graddiv.ucsb.edu/academic-programs",
+      "status": "in",
+      "confidence": "high",
+      "program_list_complete": false,
+      "notes": "Materials department and the KITP make this a strong condensed-matter target.",
+      "programs": [
+        {
+          "name": "Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry and Biochemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Statistics and Applied Probability",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical and Computer Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Materials",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Molecular, Cellular and Developmental Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Ecology, Evolution and Marine Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Earth Science",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Geography",
+          "family": "geo_env",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "ca-ucsc",
+      "name": "University of California, Santa Cruz",
+      "short": "UC Santa Cruz",
+      "city": "Santa Cruz",
+      "lat": 36.9914,
+      "lon": -122.0609,
+      "control": "public",
+      "carnegie": "R1",
+      "ipeds_unitid": null,
+      "domain": "ucsc.edu",
+      "website": "https://graddiv.ucsc.edu/programs/",
+      "status": "in",
+      "confidence": "medium",
+      "program_list_complete": false,
+      "notes": "",
+      "programs": [
+        {
+          "name": "Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Astronomy and Astrophysics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Statistics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science and Engineering",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical and Computer Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Biomolecular Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Molecular, Cell and Developmental Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Ecology and Evolutionary Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Earth and Planetary Sciences",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Ocean Sciences",
+          "family": "geo_env",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "ca-ucr",
+      "name": "University of California, Riverside",
+      "short": "UC Riverside",
+      "city": "Riverside",
+      "lat": 33.9737,
+      "lon": -117.3281,
+      "control": "public",
+      "carnegie": "R1",
+      "ipeds_unitid": null,
+      "domain": "ucr.edu",
+      "website": "https://graduate.ucr.edu/programs",
+      "status": "in",
+      "confidence": "medium",
+      "program_list_complete": false,
+      "notes": "",
+      "programs": [
+        {
+          "name": "Physics and Astronomy",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Statistics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemical and Environmental Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Materials Science and Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Bioengineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Plant Biology",
+          "family": "agri",
+          "award": "PhD"
+        },
+        {
+          "name": "Entomology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Environmental Sciences",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Earth and Planetary Sciences",
+          "family": "geo_env",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "ca-ucmerced",
+      "name": "University of California, Merced",
+      "short": "UC Merced",
+      "city": "Merced",
+      "lat": 37.3661,
+      "lon": -120.4237,
+      "control": "public",
+      "carnegie": "R2",
+      "ipeds_unitid": null,
+      "domain": "ucmerced.edu",
+      "website": "https://graduatedivision.ucmerced.edu/",
+      "status": "in",
+      "confidence": "medium",
+      "program_list_complete": false,
+      "notes": "",
+      "programs": [
+        {
+          "name": "Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry and Chemical Biology",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Applied Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical Engineering and Computer Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Environmental Systems",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Quantitative and Systems Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "ca-ucsf",
+      "name": "University of California, San Francisco",
+      "short": "UCSF",
+      "city": "San Francisco",
+      "lat": 37.7632,
+      "lon": -122.4576,
+      "control": "public",
+      "carnegie": "special focus, health",
+      "ipeds_unitid": null,
+      "domain": "ucsf.edu",
+      "website": "https://graduate.ucsf.edu/phd-programs",
+      "status": "in",
+      "confidence": "high",
+      "program_list_complete": false,
+      "notes": "Graduate-only health sciences campus. Bioengineering is run jointly with UC Berkeley.",
+      "programs": [
+        {
+          "name": "Biomedical Sciences",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Biophysics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Bioengineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry and Chemical Biology",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Neuroscience",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Pharmaceutical Sciences and Pharmacogenomics",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Epidemiology and Translational Science",
+          "family": "biomed_health",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "ca-stanford",
+      "name": "Stanford University",
+      "short": "Stanford",
+      "city": "Stanford",
+      "lat": 37.4275,
+      "lon": -122.1697,
+      "control": "private nonprofit",
+      "carnegie": "R1",
+      "ipeds_unitid": null,
+      "domain": "stanford.edu",
+      "website": "https://gradadmissions.stanford.edu/programs",
+      "status": "in",
+      "confidence": "high",
+      "program_list_complete": false,
+      "notes": "",
+      "programs": [
+        {
+          "name": "Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Applied Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Statistics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Aeronautics and Astronautics",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Civil and Environmental Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Materials Science and Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Bioengineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Neurosciences",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Earth System Science",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Geophysics",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Biomedical Informatics",
+          "family": "biomed_health",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "ca-caltech",
+      "name": "California Institute of Technology",
+      "short": "Caltech",
+      "city": "Pasadena",
+      "lat": 34.1377,
+      "lon": -118.1253,
+      "control": "private nonprofit",
+      "carnegie": "R1",
+      "ipeds_unitid": null,
+      "domain": "caltech.edu",
+      "website": "https://www.gradoffice.caltech.edu/",
+      "status": "in",
+      "confidence": "high",
+      "program_list_complete": false,
+      "notes": "Small, entirely STEM, and the highest doctoral density per faculty member in the state. Program count understates it relative to a large public.",
+      "programs": [
+        {
+          "name": "Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Applied Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Astrophysics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Planetary Science",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Computing and Mathematical Sciences",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Aerospace",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Materials Science",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Environmental Science and Engineering",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Geology",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Bioengineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Neurobiology",
+          "family": "bio_sci",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "ca-usc",
+      "name": "University of Southern California",
+      "short": "USC",
+      "city": "Los Angeles",
+      "lat": 34.0224,
+      "lon": -118.2851,
+      "control": "private nonprofit",
+      "carnegie": "R1",
+      "ipeds_unitid": null,
+      "domain": "usc.edu",
+      "website": "https://graduateadmission.usc.edu/",
+      "status": "in",
+      "confidence": "high",
+      "program_list_complete": false,
+      "notes": "",
+      "programs": [
+        {
+          "name": "Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical and Computer Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Aerospace and Mechanical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Civil and Environmental Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Materials Science",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Biomedical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Astronautical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Biological Sciences",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Neuroscience",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Earth Sciences",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Ocean Sciences",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Biostatistics",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Psychology",
+          "family": "psych_research",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "ca-scripps-research",
+      "name": "Scripps Research",
+      "short": "Scripps Research",
+      "city": "La Jolla",
+      "lat": 32.8895,
+      "lon": -117.2437,
+      "control": "private nonprofit",
+      "carnegie": "special focus, research institute",
+      "ipeds_unitid": null,
+      "domain": "scripps.edu",
+      "website": "https://education.scripps.edu/",
+      "status": "in",
+      "confidence": "medium",
+      "program_list_complete": false,
+      "notes": "Independent research institute that grants its own PhD. Distinct from Scripps Institution of Oceanography (UCSD) and Scripps College (Claremont) -- three different organisations with the same name.",
+      "programs": [
+        {
+          "name": "Chemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemical and Biological Sciences",
+          "family": "biomed_health",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "ca-nps",
+      "name": "Naval Postgraduate School",
+      "short": "NPS",
+      "city": "Monterey",
+      "lat": 36.5959,
+      "lon": -121.876,
+      "control": "federal",
+      "carnegie": "special focus, STEM",
+      "ipeds_unitid": null,
+      "domain": "nps.edu",
+      "website": "https://nps.edu/admissions",
+      "status": "in",
+      "confidence": "medium",
+      "program_list_complete": false,
+      "notes": "Federal institution. Admission is normally restricted to military officers and eligible civilians, so its programs are not open on the same terms as the rest.",
+      "programs": [
+        {
+          "name": "Physics",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Applied Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Electrical and Computer Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Astronautical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Meteorology",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Oceanography",
+          "family": "geo_env",
+          "award": "PhD"
+        },
+        {
+          "name": "Operations Research",
+          "family": "math_stat",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "ca-sdsu",
+      "name": "San Diego State University",
+      "short": "SDSU",
+      "city": "San Diego",
+      "lat": 32.7757,
+      "lon": -117.0719,
+      "control": "public",
+      "carnegie": "R2",
+      "ipeds_unitid": null,
+      "domain": "sdsu.edu",
+      "website": "https://grad.sdsu.edu/",
+      "status": "in",
+      "confidence": "medium",
+      "program_list_complete": false,
+      "notes": "Most CSU doctorates in STEM are joint with a UC campus. Counting them here and at the UC partner would double-count; they are counted here only.",
+      "programs": [
+        {
+          "name": "Computational Science",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Engineering Sciences",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Chemistry",
+          "family": "physical_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Ecology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Mathematics and Science Education",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Clinical Psychology",
+          "family": "psych_research",
+          "award": "PhD"
+        },
+        {
+          "name": "Public Health",
+          "family": "biomed_health",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "ca-santaclara",
+      "name": "Santa Clara University",
+      "short": "Santa Clara",
+      "city": "Santa Clara",
+      "lat": 37.3496,
+      "lon": -121.939,
+      "control": "private nonprofit",
+      "carnegie": "doctoral, professional",
+      "ipeds_unitid": null,
+      "domain": "scu.edu",
+      "website": "https://www.scu.edu/engineering/graduate/",
+      "status": "in",
+      "confidence": "low",
+      "program_list_complete": false,
+      "notes": "",
+      "programs": [
+        {
+          "name": "Electrical and Computer Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        },
+        {
+          "name": "Computer Science and Engineering",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Mechanical Engineering",
+          "family": "engineering",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "ca-pacific",
+      "name": "University of the Pacific",
+      "short": "Pacific",
+      "city": "Stockton",
+      "lat": 37.98,
+      "lon": -121.312,
+      "control": "private nonprofit",
+      "carnegie": "doctoral, professional",
+      "ipeds_unitid": null,
+      "domain": "pacific.edu",
+      "website": "https://www.pacific.edu/academics",
+      "status": "in",
+      "confidence": "low",
+      "program_list_complete": false,
+      "notes": "",
+      "programs": [
+        {
+          "name": "Pharmaceutical and Chemical Sciences",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Engineering Science",
+          "family": "engineering",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "ca-chapman",
+      "name": "Chapman University",
+      "short": "Chapman",
+      "city": "Orange",
+      "lat": 33.7935,
+      "lon": -117.8534,
+      "control": "private nonprofit",
+      "carnegie": "doctoral, professional",
+      "ipeds_unitid": null,
+      "domain": "chapman.edu",
+      "website": "https://www.chapman.edu/academics/",
+      "status": "in",
+      "confidence": "low",
+      "program_list_complete": false,
+      "notes": "",
+      "programs": [
+        {
+          "name": "Computational and Data Sciences",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Pharmaceutical Sciences",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Psychology",
+          "family": "psych_research",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "ca-lomalinda",
+      "name": "Loma Linda University",
+      "short": "Loma Linda",
+      "city": "Loma Linda",
+      "lat": 34.0483,
+      "lon": -117.262,
+      "control": "private nonprofit",
+      "carnegie": "special focus, health",
+      "ipeds_unitid": null,
+      "domain": "llu.edu",
+      "website": "https://home.llu.edu/academics",
+      "status": "in",
+      "confidence": "low",
+      "program_list_complete": false,
+      "notes": "",
+      "programs": [
+        {
+          "name": "Biochemistry",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Microbiology and Molecular Genetics",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Physiology",
+          "family": "biomed_health",
+          "award": "PhD"
+        },
+        {
+          "name": "Rehabilitation Science",
+          "family": "biomed_health",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    },
+    {
+      "id": "ca-cgu",
+      "name": "Claremont Graduate University",
+      "short": "CGU",
+      "city": "Claremont",
+      "lat": 34.103,
+      "lon": -117.71,
+      "control": "private nonprofit",
+      "carnegie": "R2",
+      "ipeds_unitid": null,
+      "domain": "cgu.edu",
+      "website": "https://www.cgu.edu/programs/",
+      "status": "in",
+      "confidence": "low",
+      "program_list_complete": false,
+      "notes": "Graduate-only institution inside the Claremont Colleges consortium.",
+      "programs": [
+        {
+          "name": "Computational and Systems Biology",
+          "family": "bio_sci",
+          "award": "PhD"
+        },
+        {
+          "name": "Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        },
+        {
+          "name": "Information Systems and Technology",
+          "family": "comp_info",
+          "award": "PhD"
+        },
+        {
+          "name": "Psychology",
+          "family": "psych_research",
+          "award": "PhD"
+        },
+        {
+          "name": "Engineering and Industrial Applied Mathematics",
+          "family": "math_stat",
+          "award": "PhD"
+        }
+      ],
+      "admissions": {
+        "gpa_min": null,
+        "collected": null,
+        "status": "not collected -- no source read for this institution yet"
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "name": "California State University campuses (except SDSU)",
+      "city": "statewide",
+      "reason": "CSU independent doctorates are EdD, DNP, DPT and AuD; STEM PhDs run as joint programs with a UC campus"
+    },
+    {
+      "name": "Lawrence Berkeley / Livermore National Laboratories",
+      "city": "Berkeley, Livermore",
+      "reason": "not degree-granting; students enrol through UC campuses"
+    },
+    {
+      "name": "NASA Jet Propulsion Laboratory",
+      "city": "Pasadena",
+      "reason": "not degree-granting; operated by Caltech"
+    },
+    {
+      "name": "Keck Graduate Institute",
+      "city": "Claremont",
+      "reason": "applied life sciences, professional master's and PharmD focus"
+    },
+    {
+      "name": "Stanford Research Institute (SRI)",
+      "city": "Menlo Park",
+      "reason": "not degree-granting"
+    }
+  ],
+  "sources": [
+    {
+      "label": "UC Berkeley Graduate Division",
+      "url": "https://grad.berkeley.edu/programs/",
+      "used_for": "UC Berkeley roster",
+      "checked": "2026-09-08"
+    },
+    {
+      "label": "Stanford graduate programs",
+      "url": "https://gradadmissions.stanford.edu/programs",
+      "used_for": "Stanford roster",
+      "checked": "2026-09-08"
+    },
+    {
+      "label": "Caltech Graduate Studies Office",
+      "url": "https://www.gradoffice.caltech.edu/",
+      "used_for": "Caltech roster",
+      "checked": "2026-09-08"
+    }
+  ],
+  "open_questions": [
+    "Program lists here are shallower relative to institution size than the Arizona pack, so California's program total is a worse floor than Arizona's.",
+    "CSU joint doctorates are counted at the CSU campus only. Flipping that convention moves counts between institutions.",
+    "Naval Postgraduate School has restricted admission and is not comparable to the others on access.",
+    "Multi-campus systems are one marker each; the UC system's ten doctoral campuses are ten separate records, not one."
+  ]
+}
