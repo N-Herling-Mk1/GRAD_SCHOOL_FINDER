@@ -178,7 +178,19 @@ def check_faculty(geo):
                     err("%s paper %r has no URL" % (who, p.get("title")))
             if f.get("note") and "not verified" in f["note"].lower():
                 warn("%s affiliation not verified" % who)
-        print("        %d faculty, %d papers" % (len(seen), npapers))
+        unis = {u["name"]: u for u in doc.get("universities", [])}
+        for name in sorted({f.get("university") for f in doc.get("faculty", [])}):
+            u = unis.get(name)
+            if not u:
+                err("%s: university %r has no coordinates in 'universities'" % (fname, name))
+                continue
+            st = geo.geo["states"].get(u["state"])
+            x, y = geo.project(u["lat"], u["lon"], u["state"])
+            if st and "bbox" in st:
+                b = st["bbox"]
+                if not (b[0] - 2 <= x <= b[2] + 2 and b[1] - 2 <= y <= b[3] + 2):
+                    err("%s: %s projects outside %s (lat/lon swapped?)" % (fname, name, u["state"]))
+        print("        %d faculty, %d papers, %d universities" % (len(seen), npapers, len(unis)))
 
 
 if __name__ == "__main__":

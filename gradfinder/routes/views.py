@@ -15,7 +15,7 @@ def index():
         families=FAMILIES,
         canvas=current_app.geo.canvas,
         coverage=store.index()["coverage"],
-        lens_states=len(current_app.lens.rollups()),
+        lens=current_app.lens.summary(),
         build=current_app.config["BUILD"],
     )
 
@@ -28,3 +28,14 @@ def method():
 @bp.route("/favicon.ico")
 def favicon():
     return send_from_directory(current_app.static_folder, "favicon.ico", mimetype="image/vnd.microsoft.icon")
+
+
+DOWNLOADS = {"grad_vetting_topdown_mk1.xlsx", "gradfinder_universities_mk1.csv", "topdown_mk1.json"}
+
+
+@bp.route("/downloads/<name>")
+def downloads(name):
+    """Search-material files from data/faculty. Allow-listed; the static export copies the same set."""
+    if name not in DOWNLOADS:
+        return ("not found", 404)
+    return send_from_directory(current_app.config["FACULTY_DIR"], name, as_attachment=True)

@@ -15,6 +15,7 @@
   --dimmer: #37525f;
   --ok: #4fd18b;
   --bad: #ff4d5e;
+  --lime: #c6f01a;
 
   --display: "Orbitron", "Share Tech Mono", ui-monospace, monospace;
   --mono: "Share Tech Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -22,6 +23,7 @@
   --gap: 14px;
   --radius: 2px;
   --panel-w: 392px;
+  --nav-w: 236px;
   --rail: 46px;
 }
 

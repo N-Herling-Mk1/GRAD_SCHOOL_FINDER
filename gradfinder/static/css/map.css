@@ -175,3 +175,17 @@ svg#map { width: 100%; height: 100%; display: block; }
 }
 .legend .ramp { display: flex; gap: 2px; margin-bottom: 3px; }
 .legend .ramp i { width: 20px; height: 7px; display: block; border: 1px solid var(--line); }
+
+/* faculty-lens university sites (lime = the logo's centre dot) */
+.site { cursor: pointer; }
+.site path.dia { fill: var(--lime); stroke: var(--void); stroke-width: 1.2; }
+.site.fit4 path.dia { fill-opacity: .8; }
+.site.fit3 path.dia { fill-opacity: .55; }
+.site.fit2 path.dia, .site.fit1 path.dia { fill-opacity: .35; }
+.site text {
+  font-family: var(--mono); font-size: 8.5px; fill: var(--lime);
+  paint-order: stroke; stroke: var(--void); stroke-width: 2.6px; stroke-linejoin: round;
+}
+.site.nolabel text { display: none; }
+.site.nolabel:hover text, .site.nolabel:focus text, .site.active text { display: block; }
+.site:hover path.dia, .site.active path.dia { fill: #fff; fill-opacity: 1; }

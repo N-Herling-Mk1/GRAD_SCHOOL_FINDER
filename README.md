@@ -77,7 +77,8 @@ static build → commit and push → Pages updates in about a minute.
     GET /api/v1/states/AZ                    full pack + projected marker coords
     GET /api/v1/states/AZ?family=engineering filter to one family
     GET /api/v1/states/AZ?boundary=0         drop boundary-status institutions
-    GET /api/v1/faculty                      faculty-lens rollup per state
+    GET /api/v1/faculty                      faculty-lens rollup per state + map sites + totals
+    GET /downloads/<file>                    search-material files (xlsx, csv, json)
     GET /api/v1/faculty/TN                   faculty lens for one state, grouped by university
 
 ## Adding a state
@@ -86,6 +87,21 @@ Copy `data/institutions/AZ.json`, change `state`, `state_name` and the contents,
 `python tools/check_data.py`, reload the page. Hot reload is on by default, so no
 restart. The validator projects every institution's lat/lon and fails if it lands
 outside that state's own bounding box, which catches transposed coordinates.
+
+## Layout of the page
+
+Left rail: brand, Map / Method links, pack coverage, map metric, program family, layers,
+and the **search material** block (seed paper, totals, the 28 universities ranked by best
+fit, downloads). Centre: the map. Right: the state panel.
+
+## Faculty sites on the map
+
+Every university the paper trace reached is a **lime diamond** (the logo's centre dot).
+Size = faculty found there, brightness = best fit (1-5). Hover for the top three names;
+click — or click it in the left-rail list — to open that state and jump to the
+university's block in the faculty lens. The *Faculty sites on map* layer chip toggles
+them. Coordinates live in the `universities` block of `data/faculty/topdown_mk1.json`
+and `check_data.py` fails any that project outside their state.
 
 ## Map controls
 
@@ -139,7 +155,7 @@ of Phonon Density of States With Euclidean Neural Networks*, Adv. Sci. 8, 200421
 https://doi.org/10.1002/advs.202004214 — trace citing and related papers to their senior
 authors, then to those authors' current universities. Three sweeps (citation lineage,
 Bayesian-UQ + ML-for-CMP, a University of Arizona department sweep) produced
-**88 papers → 59 faculty → 25 universities in 18 states**. Each faculty member carries a
+**88 papers → 59 faculty → 28 universities in 18 states**. Each faculty member carries a
 hand-assigned fit (1-5) and whether they sit in a Physics department.
 
 The lens shows for every state, including those without a pack, and inside an

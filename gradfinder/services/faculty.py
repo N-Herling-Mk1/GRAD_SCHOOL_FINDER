@@ -12,8 +12,9 @@ STRONG_FIT = 4
 
 
 class FacultyLens:
-    def __init__(self, faculty_dir, hot_reload=True):
+    def __init__(self, faculty_dir, geo=None, hot_reload=True):
         self.dir = faculty_dir
+        self.geo = geo
         self.hot_reload = hot_reload
         self._docs = {}
         self._mtimes = {}
@@ -96,3 +97,46 @@ class FacultyLens:
             })
         rows.sort(key=lambda r: (-r["best_fit"], -r["physics"], r["university"]))
         return {"state": code, "universities": rows, "rollup": self.rollups().get(code), "meta": self.meta}
+
+    # ------------------------------------------------------------ map sites
+    def sites(self):
+        """One map site per university: projected position plus a compact summary."""
+        if self.hot_reload:
+            self._reload()
+        coords = {}
+        for d in self._docs.values():
+            for u in d.get("universities", []):
+                coords[u["name"]] = u
+        by = defaultdict(list)
+        for f in self._all():
+            by[f["university"]].append(f)
+        out = []
+        for name, fl in by.items():
+            u = coords.get(name)
+            if not u:
+                continue
+            fl.sort(key=lambda f: (-f["fit"], f["name"]))
+            out.append({
+                "university": name,
+                "short": u.get("short") or name,
+                "city": u.get("city"),
+                "state": u["state"],
+                "inst_id": fl[0].get("inst_id"),
+                "xy": self.geo.project(u["lat"], u["lon"], u["state"]) if self.geo else None,
+                "faculty": len(fl),
+                "physics": sum(1 for f in fl if f["physics_dept"] == "yes"),
+                "best_fit": fl[0]["fit"],
+                "top": [{"name": f["name"], "fit": f["fit"], "physics_dept": f["physics_dept"]} for f in fl[:3]],
+            })
+        out.sort(key=lambda s: (-s["best_fit"], -s["faculty"], s["university"]))
+        return out
+
+    def summary(self):
+        fl = self._all()
+        return {
+            "faculty": len(fl),
+            "universities": len({f["university"] for f in fl}),
+            "states": len({f["state"] for f in fl}),
+            "papers": sum(len(f.get("papers", [])) for f in fl),
+            "physics": sum(1 for f in fl if f["physics_dept"] == "yes"),
+        }

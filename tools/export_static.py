@@ -111,6 +111,13 @@ def main():
     shutil.copy(os.path.join(ROOT, "gradfinder", "static", "favicon.ico"), os.path.join(out, "favicon.ico"))
     open(os.path.join(out, ".nojekyll"), "w").close()
 
+    print("[export] copying search-material downloads")
+    from gradfinder.routes.views import DOWNLOADS
+    os.makedirs(os.path.join(out, "downloads"))
+    for name in sorted(DOWNLOADS):
+        shutil.copy(os.path.join(Config.FACULTY_DIR, name), os.path.join(out, "downloads", name))
+        print("  [dl]   %s" % name)
+
     nfiles = sum(len(f) for _, _, f in os.walk(out))
     size = sum(os.path.getsize(os.path.join(d, f)) for d, _, fs in os.walk(out) for f in fs)
     print("=" * 62)

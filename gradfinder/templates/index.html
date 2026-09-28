@@ -1,24 +1,50 @@
 {% extends "base.html" %}
 {% block title %}Gradfinder — STEM doctorates by state{% endblock %}
 
+{% block navextra %}
+<div class="navsec">
+  <div class="coverage" id="coverage">{{ coverage }} states loaded</div>
+</div>
+<div class="navsec filters" id="filters">
+  <h3>Map metric</h3>
+  <div class="stack">
+    <button class="chipf" data-metric="institutions" aria-pressed="true">Institutions</button>
+    <button class="chipf" data-metric="programs" aria-pressed="false">Programs on file</button>
+    <button class="chipf lens" data-metric="lens" aria-pressed="false">Faculty lens</button>
+  </div>
+  <h3>Program family</h3>
+  <div class="stack">
+    <button class="chipf" data-family="" aria-pressed="true">All programs</button>
+    {% for f in families %}
+    <button class="chipf" data-family="{{ f.key }}" aria-pressed="false">{{ f.label }}</button>
+    {% endfor %}
+  </div>
+  <h3>Layers</h3>
+  <div class="stack">
+    <button class="chipf" data-layer="sites" aria-pressed="true">Faculty sites on map</button>
+  </div>
+  <div class="note" id="filternote">Institution counts are comparable between states. Program counts are not.</div>
+</div>
+<div class="navsec search">
+  <h3>Search material</h3>
+  <div class="seed">Seed: <a href="https://doi.org/10.1002/advs.202004214" target="_blank" rel="noopener">Chen et al., phonon DOS with Euclidean NNs</a> (Adv. Sci. 2021) &mdash; the FORGE phonon reproduction.</div>
+  <div class="nums">
+    <span><b>{{ lens.papers }}</b> papers</span><span><b>{{ lens.faculty }}</b> faculty</span>
+    <span><b>{{ lens.universities }}</b> universities</span><span><b>{{ lens.states }}</b> states</span>
+  </div>
+  <div class="sitelist" id="sitelist"></div>
+  <div class="dl">
+    <a href="downloads/grad_vetting_topdown_mk1.xlsx">Workbook (.xlsx)</a>
+    <a href="downloads/gradfinder_universities_mk1.csv">Universities (.csv)</a>
+    <a href="downloads/topdown_mk1.json">Raw data (.json)</a>
+    <a href="https://github.com/N-Herling-Mk1/GRAD_SCHOOL_FINDER/blob/main/docs/TOPDOWN.md" target="_blank" rel="noopener">Method notes</a>
+  </div>
+</div>
+{% endblock %}
+
 {% block body %}
 <div class="body">
   <section class="stage">
-    <div class="filters" id="filters">
-      <span class="metric" id="metric">
-        <button class="chipf" data-metric="institutions" aria-pressed="true">Institutions</button><button
-                class="chipf" data-metric="programs" aria-pressed="false">Programs on file</button><button
-                class="chipf lens" data-metric="lens" aria-pressed="false">Faculty lens</button>
-      </span>
-      <span class="divider"></span>
-      <button class="chipf" data-family="" aria-pressed="true">All programs</button>
-      {% for f in families %}
-      <button class="chipf" data-family="{{ f.key }}" aria-pressed="false">{{ f.label }}</button>
-      {% endfor %}
-      <span class="spacer"></span>
-      <span class="note" id="filternote">Institution counts are comparable between states. Program counts are not.</span>
-    </div>
-
     <div class="mapwrap" id="mapwrap">
       <button class="zoomout" id="zoomout">&larr; Back to the full map (Esc)</button>
       <svg id="map" viewBox="0 0 {{ canvas.width }} {{ canvas.height }}"
@@ -26,6 +52,7 @@
            aria-label="United States map. Select a state to see its doctoral programs.">
         <g id="layer-states"></g>
         <g id="layer-labels"></g>
+        <g id="layer-sites"></g>
         <g id="layer-markers"></g>
         <g id="layer-box"></g>
       </svg>
@@ -40,7 +67,7 @@
     <div class="empty">
       <b>Pick a state</b>
       Hover to read the totals, click to open the institutions. Four states have packs;
-      the rest are outlines waiting on one. The Faculty lens chip recolours the map by strong-fit faculty traced from papers ({{ lens_states }} states). Wheel zooms, drag pans, right click for options.
+      the rest are outlines waiting on one. Lime diamonds are universities found by the paper trace (size = faculty found, brightness = best fit); click one to open its faculty. Wheel zooms, drag pans, right click for options.
     </div>
   </aside>
 </div>

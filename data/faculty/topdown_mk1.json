@@ -19,7 +19,8 @@
   "fit_scale": "1-5, hand-assigned. 5 = direct overlap with phonon ML or Bayesian UQ AND can advise a condensed-matter Physics PhD.",
   "physics_dept": "yes = primary Physics/Applied Physics appointment; joint = joint appointment or listed in a physics grad program (confirm sole advising); no = other department.",
   "not_comparable": "Arizona was swept department by department; every other state entered only through papers. Faculty counts are NOT comparable between states. Compare on best fit.",
-  "verification": "Affiliations checked against 2025-26 faculty pages by the sweep agents unless the note says otherwise. Recruiting status is only what a faculty page states."
+  "verification": "Affiliations checked against 2025-26 faculty pages by the sweep agents unless the note says otherwise. Recruiting status is only what a faculty page states.",
+  "coordinates": "Main-campus coordinates, hand-entered; marker placement only."
  },
  "faculty": [
   {
@@ -1547,6 +1548,232 @@
      "note": null
     }
    ]
+  }
+ ],
+ "universities": [
+  {
+   "name": "Caltech",
+   "short": "Caltech",
+   "state": "CA",
+   "city": "Pasadena",
+   "lat": 34.1377,
+   "lon": -118.1253
+  },
+  {
+   "name": "Cornell",
+   "short": "Cornell",
+   "state": "NY",
+   "city": "Ithaca",
+   "lat": 42.4534,
+   "lon": -76.4735
+  },
+  {
+   "name": "Duke",
+   "short": "Duke",
+   "state": "NC",
+   "city": "Durham",
+   "lat": 36.0014,
+   "lon": -78.9382
+  },
+  {
+   "name": "Emory",
+   "short": "Emory",
+   "state": "GA",
+   "city": "Atlanta",
+   "lat": 33.7925,
+   "lon": -84.324
+  },
+  {
+   "name": "Harvard",
+   "short": "Harvard",
+   "state": "MA",
+   "city": "Cambridge",
+   "lat": 42.377,
+   "lon": -71.1167
+  },
+  {
+   "name": "Johns Hopkins",
+   "short": "JHU",
+   "state": "MD",
+   "city": "Baltimore",
+   "lat": 39.3299,
+   "lon": -76.6205
+  },
+  {
+   "name": "MIT",
+   "short": "MIT",
+   "state": "MA",
+   "city": "Cambridge",
+   "lat": 42.3601,
+   "lon": -71.0942
+  },
+  {
+   "name": "Northeastern",
+   "short": "Northeastern",
+   "state": "MA",
+   "city": "Boston",
+   "lat": 42.3398,
+   "lon": -71.0892
+  },
+  {
+   "name": "Portland State",
+   "short": "PSU",
+   "state": "OR",
+   "city": "Portland",
+   "lat": 45.5118,
+   "lon": -122.6853
+  },
+  {
+   "name": "Purdue",
+   "short": "Purdue",
+   "state": "IN",
+   "city": "West Lafayette",
+   "lat": 40.4237,
+   "lon": -86.9212
+  },
+  {
+   "name": "Texas A&M",
+   "short": "TAMU",
+   "state": "TX",
+   "city": "College Station",
+   "lat": 30.6187,
+   "lon": -96.3365
+  },
+  {
+   "name": "U Florida",
+   "short": "UF",
+   "state": "FL",
+   "city": "Gainesville",
+   "lat": 29.6436,
+   "lon": -82.3549
+  },
+  {
+   "name": "U Houston",
+   "short": "UH",
+   "state": "TX",
+   "city": "Houston",
+   "lat": 29.7199,
+   "lon": -95.3422
+  },
+  {
+   "name": "U Michigan",
+   "short": "UMich",
+   "state": "MI",
+   "city": "Ann Arbor",
+   "lat": 42.278,
+   "lon": -83.7382
+  },
+  {
+   "name": "U Minnesota",
+   "short": "UMN",
+   "state": "MN",
+   "city": "Minneapolis",
+   "lat": 44.974,
+   "lon": -93.2277
+  },
+  {
+   "name": "U Oregon",
+   "short": "UO",
+   "state": "OR",
+   "city": "Eugene",
+   "lat": 44.0448,
+   "lon": -123.0726
+  },
+  {
+   "name": "U South Carolina",
+   "short": "USC (SC)",
+   "state": "SC",
+   "city": "Columbia",
+   "lat": 33.994,
+   "lon": -81.0301
+  },
+  {
+   "name": "U Tennessee Knoxville",
+   "short": "UTK",
+   "state": "TN",
+   "city": "Knoxville",
+   "lat": 35.9544,
+   "lon": -83.9295
+  },
+  {
+   "name": "U Virginia",
+   "short": "UVA",
+   "state": "VA",
+   "city": "Charlottesville",
+   "lat": 38.0336,
+   "lon": -78.508
+  },
+  {
+   "name": "UC Davis",
+   "short": "UC Davis",
+   "state": "CA",
+   "city": "Davis",
+   "lat": 38.5382,
+   "lon": -121.7617
+  },
+  {
+   "name": "UC Irvine",
+   "short": "UCI",
+   "state": "CA",
+   "city": "Irvine",
+   "lat": 33.6405,
+   "lon": -117.8443
+  },
+  {
+   "name": "UC Riverside",
+   "short": "UCR",
+   "state": "CA",
+   "city": "Riverside",
+   "lat": 33.9737,
+   "lon": -117.3281
+  },
+  {
+   "name": "UC San Diego",
+   "short": "UCSD",
+   "state": "CA",
+   "city": "La Jolla",
+   "lat": 32.8801,
+   "lon": -117.234
+  },
+  {
+   "name": "UCLA",
+   "short": "UCLA",
+   "state": "CA",
+   "city": "Los Angeles",
+   "lat": 34.0689,
+   "lon": -118.4452
+  },
+  {
+   "name": "UIUC",
+   "short": "UIUC",
+   "state": "IL",
+   "city": "Urbana-Champaign",
+   "lat": 40.102,
+   "lon": -88.2272
+  },
+  {
+   "name": "UT Austin",
+   "short": "UT Austin",
+   "state": "TX",
+   "city": "Austin",
+   "lat": 30.2849,
+   "lon": -97.7341
+  },
+  {
+   "name": "UW-Madison",
+   "short": "UW-Madison",
+   "state": "WI",
+   "city": "Madison",
+   "lat": 43.0766,
+   "lon": -89.4125
+  },
+  {
+   "name": "University of Arizona",
+   "short": "UArizona",
+   "state": "AZ",
+   "city": "Tucson",
+   "lat": 32.2319,
+   "lon": -110.9501
   }
  ]
 }

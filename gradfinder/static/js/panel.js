@@ -19,8 +19,9 @@ GF.panel = (function () {
 
   function idle() {
     root.innerHTML = '<div class="empty"><b>Pick a state</b>Hover to read the totals, click to ' +
-      'open the institutions. Arizona is the only state with a data pack right now; the rest are ' +
-      'outlines waiting on one.</div>';
+      'open the institutions. Four states have data packs; the rest are outlines waiting on one. ' +
+      'Lime diamonds are universities found by the paper trace \u2014 click one, or pick it from ' +
+      'the list in the left rail, to open its faculty.</div>';
   }
 
   function empty(doc, lens) {
@@ -183,7 +184,7 @@ GF.panel = (function () {
     }
     html += lens.universities.map(function (u) {
       var top = u.faculty.slice(0, 3).map(function (f) { return esc(f.name); }).join(', ');
-      return '<details class="lens-uni"' + (u.faculty.length <= 5 ? ' open' : '') + '>' +
+      return '<details class="lens-uni" data-uni="' + esc(u.university) + '"' + (u.faculty.length <= 5 ? ' open' : '') + '>' +
         '<summary class="lens-uni-h">' + esc(u.university) +
         '<span>best ' + u.best_fit + '/5 \u00b7 ' + u.faculty.length + ' found</span>' +
         (u.faculty.length > 5 ? '<div class="lens-top">top: ' + top + ' \u2014 click to expand</div>' : '') +
@@ -291,6 +292,16 @@ GF.panel = (function () {
     card.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
   }
 
-  return { init: init, render: render, idle: idle, empty: empty,
+  function openLensUniversity(name) {
+    var hit = null;
+    Array.prototype.forEach.call(root.querySelectorAll('details.lens-uni'), function (d) {
+      var me = d.getAttribute('data-uni') === name;
+      d.classList.toggle('active', me);
+      if (me) { d.open = true; hit = d; }
+    });
+    if (hit) hit.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  }
+
+  return { init: init, openLensUniversity: openLensUniversity, render: render, idle: idle, empty: empty,
            openInstitution: openInstitution, setActive: setActive };
 })();

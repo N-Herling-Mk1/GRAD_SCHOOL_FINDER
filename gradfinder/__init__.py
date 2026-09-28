@@ -38,7 +38,7 @@ def create_app(config_object=Config):
     store = Store(config_object.INSTITUTIONS_DIR, geo, hot_reload=config_object.HOT_RELOAD_DATA)
 
     print("[boot] loading faculty lens...")
-    lens = FacultyLens(config_object.FACULTY_DIR, hot_reload=config_object.HOT_RELOAD_DATA)
+    lens = FacultyLens(config_object.FACULTY_DIR, geo=geo, hot_reload=config_object.HOT_RELOAD_DATA)
 
     app.geo = geo
     app.lens = lens

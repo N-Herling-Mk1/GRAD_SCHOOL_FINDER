@@ -80,6 +80,7 @@ GF.api = (function () {
     geo: function () { return get('/geo', 'loading geometry'); },
     meta: function () { return get('/meta', 'loading schema'); },
     index: function () { return get('/states', 'loading state index'); },
+    facultyIndex: function () { return get('/faculty', 'loading faculty sites'); },
     faculty: function (code) { return get('/faculty/' + code, 'loading faculty lens ' + code); },
     state: function (code, family) {
       if (STATIC) {

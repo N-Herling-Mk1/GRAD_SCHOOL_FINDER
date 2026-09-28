@@ -4,7 +4,8 @@
 window.GF = window.GF || {};
 
 GF.map = (function () {
-  var svg, gStates, gLabels, gMarkers, gBox, tip, chipbox, zoomBtn, wrap, menu;
+  var svg, gStates, gLabels, gMarkers, gSites, gBox, tip, chipbox, zoomBtn, wrap, menu;
+  var siteRecs = [], sitesOn = true;   // faculty-lens university sites
   var geo = null, index = null, family = '', metric = 'institutions', selected = null;
   var canvas = { width: 975, height: 610 };
   var view = { x: 0, y: 0, w: 975, h: 610 };
@@ -64,6 +65,7 @@ GF.map = (function () {
     gStates = document.getElementById('layer-states');
     gLabels = document.getElementById('layer-labels');
     gMarkers = document.getElementById('layer-markers');
+    gSites = document.getElementById('layer-sites');
     gBox = document.getElementById('layer-box');
     tip = document.getElementById('tip');
     chipbox = document.getElementById('smallchips');
@@ -217,7 +219,7 @@ GF.map = (function () {
   function scaleMarkers() {
     var k = scale();
     var drawn = [];
-    markerRecs.forEach(function (m) {
+    markerRecs.concat(siteRecs.filter(function (s) { return !s.hidden; })).forEach(function (m) {
       m.g.setAttribute('transform', 'translate(' + m.x + ',' + m.y + ') scale(' + (1 / k) + ')');
       var sx = m.x * k, sy = m.y * k;
       var clash = drawn.some(function (d) {
@@ -427,6 +429,8 @@ GF.map = (function () {
     selected = null;
     gMarkers.innerHTML = '';
     markerRecs = [];
+    siteRecs.forEach(function (s) { s.hidden = false; s.g.style.display = sitesOn ? '' : 'none'; });
+    highlightSite(null);
     paint();
     resetView();
     if (onSelect) onSelect(null);
@@ -436,7 +440,13 @@ GF.map = (function () {
   function markers(detail, onPick) {
     gMarkers.innerHTML = '';
     markerRecs = [];
-    if (!detail || !detail.institutions) return;
+    var ids = {};
+    if (detail && detail.institutions) detail.institutions.forEach(function (i) { ids[i.id] = 1; });
+    siteRecs.forEach(function (s) {
+      s.hidden = !!(s.site.inst_id && ids[s.site.inst_id]);
+      s.g.style.display = (s.hidden || !sitesOn) ? 'none' : '';
+    });
+    if (!detail || !detail.institutions) { scaleMarkers(); return; }
     var NS = 'http://www.w3.org/2000/svg';
     detail.institutions.forEach(function (inst) {
       var g = document.createElementNS(NS, 'g');
@@ -479,6 +489,73 @@ GF.map = (function () {
     });
   }
 
+  /* ------------------------------------------------------ faculty sites
+     One lime diamond per university the paper trace reached. Size follows the
+     number of faculty found there, opacity the best fit. Drawn under the
+     institution markers and hidden where a pack marker already sits. */
+  function sites(list, onPick) {
+    gSites.innerHTML = '';
+    siteRecs = [];
+    var NS = 'http://www.w3.org/2000/svg';
+    (list || []).forEach(function (s) {
+      if (!s.xy) return;
+      var g = document.createElementNS(NS, 'g');
+      g.setAttribute('class', 'site fit' + s.best_fit);
+      g.setAttribute('tabindex', '0');
+      g.setAttribute('role', 'button');
+      g.setAttribute('aria-label', s.university + ', ' + s.faculty + ' faculty, best fit ' + s.best_fit);
+      var r = 3.4 + Math.sqrt(s.faculty) * 1.5;
+      var dia = document.createElementNS(NS, 'path');
+      dia.setAttribute('class', 'dia');
+      dia.setAttribute('d', 'M0,' + (-r) + ' L' + r + ',0 L0,' + r + ' L' + (-r) + ',0 Z');
+      var label = document.createElementNS(NS, 'text');
+      label.setAttribute('x', r + 4);
+      label.setAttribute('y', 3.2);
+      label.textContent = s.short + '  ' + s.best_fit + '/5';
+      g.appendChild(dia); g.appendChild(label);
+      g.addEventListener('click', function (e) { e.stopPropagation(); if (onPick) onPick(s); });
+      g.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); if (onPick) onPick(s); }
+      });
+      g.addEventListener('mousemove', function (e) { showSiteTip(s, e); });
+      g.addEventListener('mouseleave', hideTip);
+      gSites.appendChild(g);
+      siteRecs.push({ g: g, label: label, x: s.xy[0], y: s.xy[1], site: s, hidden: false,
+                      labelWidth: r + 10 + label.textContent.length * 5.2 });
+    });
+    scaleMarkers();
+  }
+
+  function showSiteTip(s, e) {
+    var rows = '<div class="row">' + esc(s.city || '') + ', ' + s.state + '</div>' +
+      '<div class="row">faculty found <span>' + s.faculty + '</span></div>' +
+      '<div class="row">in physics <span>' + s.physics + '</span></div>' +
+      '<div class="row">best fit <span>' + s.best_fit + '/5</span></div>' +
+      s.top.map(function (f) { return '<div class="row lensrow">' + esc(f.name) + ' <span>' + f.fit + '/5</span></div>'; }).join('');
+    tip.classList.remove('empty');
+    tip.innerHTML = '<b>' + esc(s.university) + '</b>' + rows;
+    tip.style.display = 'block';
+    var box = wrap.getBoundingClientRect();
+    tip.style.left = Math.min(e.clientX - box.left + 14, box.width - tip.offsetWidth - 12) + 'px';
+    tip.style.top = Math.min(e.clientY - box.top + 14, box.height - tip.offsetHeight - 12) + 'px';
+  }
+
+  function esc(t) {
+    return String(t == null ? '' : t).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  function setSites(on) {
+    sitesOn = !!on;
+    siteRecs.forEach(function (s) { s.g.style.display = (s.hidden || !sitesOn) ? 'none' : ''; });
+    scaleMarkers();
+  }
+
+  function highlightSite(name) {
+    siteRecs.forEach(function (s) { s.g.classList.toggle('active', s.site.university === name); });
+  }
+
   function setIndex(doc) { index = doc; paint(); }
   function setFamily(key) { family = key || ''; paint(); }
   function setMetric(key) { metric = key; paint(); }
@@ -486,6 +563,7 @@ GF.map = (function () {
   return {
     build: build, select: select, clear: clear, markers: markers, highlight: highlight,
     setIndex: setIndex, setFamily: setFamily, setMetric: setMetric, reset: resetView,
+    sites: sites, setSites: setSites, highlightSite: highlightSite,
     get selected() { return selected; },
     get metric() { return metric; }
   };

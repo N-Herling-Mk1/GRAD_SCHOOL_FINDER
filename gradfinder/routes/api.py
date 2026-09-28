@@ -56,7 +56,9 @@ def state_detail(code):
 
 @bp.route("/faculty")
 def faculty_index():
-    return jsonify({"meta": current_app.lens.meta, "states": current_app.lens.rollups()})
+    lens = current_app.lens
+    return jsonify({"meta": lens.meta, "summary": lens.summary(),
+                    "states": lens.rollups(), "sites": lens.sites()})
 
 
 @bp.route("/faculty/<code>")
